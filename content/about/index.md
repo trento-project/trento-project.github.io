@@ -1,7 +1,6 @@
 ---
 title: "About"
 date: 2019-06-17T23:53:00+01:00
-draft: true
 hideLastModified: true
 showInMenu: true
 tags: ["About"]
@@ -17,7 +16,7 @@ Our vision is to provide a great and new experience for SAP Applications system 
 
 ### Our Mission
 
-Our mission is to deliver, via a new cloud-native web console, an easy-to-use solution focused on simplifying and automating the SAP Applications routines a sysadm needs to perform when using a Linux operating system.
+Our mission is to deliver, via a new cloud-native web console, an easy-to-use solution focused on simplifying and automating the SAP Applications routines a System Administrator needs to perform when using a Linux operating system.
 
 Our goal is to accomplish that using modern technologies fostering a "maintenance-free" infrastructure based on modern concepts like automated service discovery and automated operations, observability, configuration-as-code, among others. 
 
