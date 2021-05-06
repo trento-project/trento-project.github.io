@@ -109,7 +109,7 @@ params:
     title: Trento Console for SAP Applications
     # option to specify the subtitle in the homepage
     subtitle: |
-        An open cloud-native web console improving on the life of SAP Applications administrators.
+        A new open-source cloud-native web console aiming to improve the workday of SAP Applications administrators
     # option to specify image in the homepage
     image: "/images/trento-logo-stacked.svg" # worker.svg 
     # option to specify the width of the image in the homepage
