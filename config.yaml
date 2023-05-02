@@ -18,14 +18,11 @@ DefaultContentLanguage: en
 ## Option to disable additional language in your site.
 # disableLanguages: ["ru"]
 
-disableKinds: ["sitemap","RSS"]
+disableKinds: ["sitemap","RSS", 'taxonomy', 'term']
 
 # Option to specify that all links will be open in a new tab.
 blackfriday:
   hrefTargetBlank: true
-
-Taxonomies:
-  tag: "tags"
 
 # Supported fonts are:
 # https://fonts.google.com/
