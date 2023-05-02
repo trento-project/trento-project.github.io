@@ -5,6 +5,13 @@
       <!-- <div class="navbar-start"> -->
       <!-- <div class="columns"> -->
 
+      {{- $navbar   := .Site.Params.navbar -}}
+      {{- $logo := index $navbar "logo" -}}
+      
+      {{- $img := resources.Get $logo -}}
+      <a class="navbar-item" href="/">
+        <img src="{{- $img.Permalink | relURL -}}" alt="trento logo" />
+      </a>
       <div class="navbar-item is-expanded"></div>
       <a class="navbar-item is-hidden-desktop">  
         <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">

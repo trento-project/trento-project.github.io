@@ -82,6 +82,9 @@ params:
     fontFamily: "Lato"
     # option to show the little logos on the side of the navbar items
     showIcons: false
+    # left logo
+    logo: "/images/trento-logo-horizontal.svg"
+
 
   # 404 page options
   pagNotFound:
