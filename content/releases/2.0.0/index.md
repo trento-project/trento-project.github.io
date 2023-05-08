@@ -6,7 +6,6 @@ showInMenu: false
 summary: "Available beginning of May’23, Trento 2.0.0 brings major changes to the architecture of the solution..."
 layout: test
 image: "trento-release-2-0-0-hero@2x.png"
-# no need for the "summary" parameter as it is not displayed in any previews
 ---
 ![Trento Release Version 2.0.0](trento-release-2-0-0-hero@2x.png)
 
