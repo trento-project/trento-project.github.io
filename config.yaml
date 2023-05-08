@@ -24,9 +24,9 @@ disableKinds: ["sitemap","RSS"]
 blackfriday:
   hrefTargetBlank: true
 
-Taxonomies:
-  tag: "tags"
-
+taxonomies:
+  release: 'releases'
+  
 # Supported fonts are:
 # https://fonts.google.com/
 
@@ -85,6 +85,9 @@ params:
     fontFamily: "Lato"
     # option to show the little logos on the side of the navbar items
     showIcons: false
+    # left logo
+    logo: "/images/trento-logo-horizontal.svg"
+
 
   # 404 page options
   pagNotFound:
