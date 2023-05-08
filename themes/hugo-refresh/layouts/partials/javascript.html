@@ -3,12 +3,6 @@
 {{- $js3 := resources.Get "js/modernizr-3.6.0.js" -}}
 {{- $js4 := resources.Get "js/refresh.js" -}}
 
-{{- $js5 := resources.Get "js/mathjax/core.js" -}}
-{{- $js6 := resources.Get "js/mathjax/tex-base.js" -}}
-{{- $js7 := resources.Get "js/mathjax/chtml.js" -}}
-{{- $js8 := resources.Get "js/mathjax/tex_out.js" -}}
-{{- $js9 := resources.Get "js/mathjax/startup.js" -}}
-
 {{- $js10 := resources.Get "js/highlight.9.18.1.js" -}}
 {{- $js11 := resources.Get "js/highlightjs-line-numbers.2.7.0.min.js" -}}
 
@@ -18,11 +12,6 @@
     {{- $js3 = $js3 | resources.Minify -}}
     {{- $js4 = $js4 | resources.Minify -}}
 
-    {{- $js5 = $js5 | resources.Minify -}}
-    {{- $js6 = $js6 | resources.Minify -}}
-    {{- $js7 = $js7 | resources.Minify -}}
-    {{- $js8 = $js8 | resources.Minify -}}
-    {{- $js9 = $js9 | resources.Minify -}}
     {{- $js10 = $js10 | resources.Minify -}}
     {{- $js11 = $js11 | resources.Minify -}}
 {{- end -}}
@@ -32,12 +21,6 @@
   {{- $js2 = $js2 | resources.Fingerprint -}}
   {{- $js3 = $js3 | resources.Fingerprint -}}
   {{- $js4 = $js4 | resources.Fingerprint -}}
-
-  {{- $js5 = $js5 | resources.Fingerprint -}}
-  {{- $js6 = $js6 | resources.Fingerprint -}}
-  {{- $js7 = $js7 | resources.Fingerprint -}}
-  {{- $js8 = $js8 | resources.Fingerprint -}}
-  {{- $js9 = $js9 | resources.Fingerprint -}}
 
   {{- $js10 = $js10 | resources.Fingerprint -}}
   {{- $js11 = $js11 | resources.Fingerprint -}}
@@ -55,29 +38,10 @@
   <script src="{{- $js4.Permalink | relURL -}}"></script>
 {{- end -}}
 
-<script>
-  window.MathJax = {
-    loader: {
-      load: ['core', 'input/tex-base', 'output/chtml'],  
-      source: {
-        'core': '{{- $js5.Permalink | relURL -}}',
-        'input/tex-base': '{{- $js6.Permalink | relURL -}}',
-        'output/chtml': '{{- $js7.Permalink | relURL -}}',
-        'output/chtml/fonts/tex': '{{- $js8.Permalink | relURL -}}'
-      },
-    },
-    chtml: {
-      fontURL: '/fonts' 
-    },
-  };
-</script>
-
 {{- if .Site.Params.jsIntegrity -}}
-  <script src="{{- $js9.Permalink | relURL -}}" integrity="{{- $js9.Data.Integrity -}}"></script>
   <script src="{{- $js10.Permalink | relURL -}}" integrity="{{- $js10.Data.Integrity -}}"></script>
   <script src="{{- $js11.Permalink | relURL -}}" integrity="{{- $js11.Data.Integrity -}}"></script>
 {{- else -}}
-  <script src="{{- $js9.Permalink | relURL -}}"></script>
   <script src="{{- $js10.Permalink | relURL -}}"></script>
   <script src="{{- $js11.Permalink | relURL -}}"></script>
 {{- end -}}
@@ -91,12 +55,3 @@
     });
   });
 </script>
-
-{{/*  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>  */}}
