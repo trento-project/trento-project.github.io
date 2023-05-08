@@ -19,3 +19,13 @@ Our mission is to deliver, via a cloud-native web console, an easy-to-use soluti
 
 Our goal is to accomplish that using modern technologies fostering a "maintenance-free" infrastructure based on modern concepts like automated service discovery and automated operations, observability, configuration-as-code, among others. 
 
+### Why Trento?
+
+_Trento is a city on the Adige River in Trentino-Alto Adige/Südtirol in Italy.
+[...] It is one of the nation's wealthiest and most prosperous cities, [...]
+often ranking highly among Italian cities for quality of life, standard of
+living, and business and job opportunities._ ([source](https://en.wikipedia.org/wiki/Trento))
+
+Inspired by the qualities of Trento city and our goal of providing a better life quality for the SAP Administrators, we felt that _Trento_ was the right choice for the project name.
+
+We hope that using our project makes you feel like visiting Trento and provides you a great time!
