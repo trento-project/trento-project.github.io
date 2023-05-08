@@ -25,7 +25,42 @@ In the new checks engine, that we internally call wanda, the execution of a chec
 
 The new checks engine comes with a new Domain Specific Language where checks are represented by yaml files with a human readable structure.
 
-![Trento Domain Specific Language - YAML](trento-check-yaml@2x.png)
+```
+## Check YAML (Domain Specific Language) Example
+{
+  id: "156F64"
+  name: Check Corosync token_timeout value
+  group: Corosync
+  description: |
+    Corosync `token` timeout is set to expected value
+  remediation: |
+    ## Abstract
+    The value of the Corosync `token` timeout is not set as recommended.
+
+    ## Remediation
+    Adjust the corosync `token` timeout as recommended on the best practices, and reload the corosync configuration...
+
+    ## References...
+
+facts:
+  - name: corosync_token_timeout
+    gatherer: corosync.conf
+    argument: totem.token
+
+values:
+  - name: expected_token_timeout
+    default: 5000
+    conditions:
+      - value: 30000
+        when: env.provider == "azure" || env.provider == "aws"
+      - value: 20000
+        when: env.provider == "gcp"
+
+expectations:
+  - name: token_timeout
+    expect: facts.corosync_token_timeout == values.expected_token_timeout
+}
+```
 
 **The new checks engine is the gateway to the following features:​**
 * Configuration checks for other HA scenarios (ASCS/ERS, Cost Optimized, Scale-Out).​
