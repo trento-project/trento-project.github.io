@@ -19,7 +19,7 @@ The main change in the new version is a brand-new SSH-less checks engine, but it
 
 # SSH-less Checks Engine
 
-The old engine required an SSH connection from the server to the cluster nodes to execute the checks, which were nothing but Ansible playbooks. With the new checks engine the SSH connection is no longer necessary, which **helps improve the security** of the entire architect. Moving forward there will be only one secured communication channel from the architecture to the server and there will be no need to maintain an SSH key specific for Trento nor an SSH user with elevated access to execute the Ansible playbooks.​
+The old engine required an SSH connection from the server to the cluster nodes to execute the checks, which were nothing but Ansible playbooks. With the new checks engine the SSH connection is no longer necessary, which **helps improve the security** of the entire architect. Moving forward there will be only one secured communication channel from the agent host to the server and there will be no need to maintain an SSH key specific for Trento nor an SSH user with elevated access to execute the Ansible playbooks.​
 
 In the new checks engine, that we internally call wanda, the execution of a check is split in two stages. On one side, the agent is responsible for gathering the required data, we call them facts. The facts are sent by the agent to the checks engine which in turn performs their evaluation. This division of responsibilities translates in a reduced footprint on the SAP host and a much better performance.​
 
