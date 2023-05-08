@@ -47,5 +47,5 @@ For a full list of available, versioned external APIs go to:
 
 ![Trento External APIs](trento-external-api@2x.png)
 
-**Are you wanting to upgrade or try out Trento?**\
+# Are you wanting to upgrade or try out Trento?
 Follow the [instructions in our documentation](https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html "Getting started with Trento Premium") to get started.
