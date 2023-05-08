@@ -6,10 +6,11 @@ on:
       - main  # Set a branch to deploy
     paths-ignore:
       - '**/README.md'
+  workflow_dispatch:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
 
