@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 2.1.0"
-date: 2023-08-08T14:20:00+02:00
+date: 2023-08-16T08:20:00+02:00
 hideLastModified: true
 showInMenu: false
 summary: "Trento 2.0.0 was a turning point in the Project as it introduced a redesigned, more secure and faster..."
