@@ -1,0 +1,9 @@
+{{- $image  := printf "%s" (.Get "image") -}}
+{{- $title  := printf "%s" (.Get "title") -}}
+{{- $caption  := printf "%s" (.Get "caption") -}}
+
+<div class="column is-one-third">
+    {{- $image -}}
+    <h3>{{- $title -}}</h3>
+    <p>{{- $caption -}}</p>
+</div>
