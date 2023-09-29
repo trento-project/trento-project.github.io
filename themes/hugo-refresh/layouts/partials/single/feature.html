@@ -1,0 +1,11 @@
+<h2>{{ .Params.featuredTitle }}</h2>
+
+<div class="columns is-centered container">
+    {{ range $block := .Params.featuredContent }}
+    <div class="column is-one-third">
+        {{ $block.image }}
+        <h3>{{ $block.title }}</h3>
+        <p>{{ $block.caption }}</p>
+    </div>
+    {{ end }}
+</div>
