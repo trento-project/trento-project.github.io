@@ -1,0 +1,13 @@
+<div class="columns is-centered container">
+    <div class="column is-three-fifths">
+    <h2>{{ .Params.subfeatTitle }}</h2>
+
+    {{ range $block := .Params.subfeatContent }}
+    <div class="">
+        {{ $block.image }}
+        <h3>{{ $block.title }}</h3>
+        <p>{{ $block.caption }}</p>
+    </div>
+    {{ end }}
+    </div>
+</div>
