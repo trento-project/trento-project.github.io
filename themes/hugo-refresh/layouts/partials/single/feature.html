@@ -4,7 +4,13 @@
     {{ range $block := .Params.featuredContent }}
     <div class="column is-one-third">
         {{ with $image := $.Page.Resources.Get $block.image }}
-        <img src="{{ $image.Permalink | relURL }}" width="150" />
+        {{ $imageScale := 1 }}
+
+        {{ if hasSuffix $image "@2x.png" }}
+            {{ $imageScale = 2 }}
+        {{ end }}
+
+        <img src="{{ $image.Permalink | relURL }}" width="{{ div $image.Width $imageScale}}" />
         {{ end }}
         <h3>{{ $block.title }}</h3>
         <p>{{ $block.caption }}</p>
