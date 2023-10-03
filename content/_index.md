@@ -37,3 +37,8 @@ subFeatContent:
 
 ## How it Works
 ![Trento Checks Engine](trento-checks-engine@2x.png)
+
+## Get Started with Trento
+Use Trento with you SAP Application server and improve the overall visibility and discovery of faults which are aligned to the SUSE SAP Best Practice Guidelines.
+
+[Read Documentation](https://github.com/trento-project/docs "Start Reading the Trento Documentation")

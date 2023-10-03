@@ -6,9 +6,13 @@
     {{- partial "hero.html" . -}}
 
     <div class="container has-text-centered">
-    {{- partial "single/feature.html" . -}}
-    {{- partial "single/subfeature.html" . -}}
-    {{ .Content }}
+        {{- partial "single/feature.html" . -}}
+        {{- partial "single/subfeature.html" . -}}
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+            {{ .Content }}
+            </div>
+        </div>
     </div>
     
     {{- partial "footer.html" . -}}
