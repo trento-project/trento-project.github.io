@@ -3,7 +3,9 @@
 <div class="columns is-centered container">
     {{ range $block := .Params.featuredContent }}
     <div class="column is-one-third">
-        {{ $block.image }}
+        {{ with $image := $.Page.Resources.Get $block.image }}
+        <img src="{{ $image.Permalink | relURL }}" width="150" />
+        {{ end }}
         <h3>{{ $block.title }}</h3>
         <p>{{ $block.caption }}</p>
     </div>

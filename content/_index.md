@@ -4,15 +4,15 @@ hideLastModified: true
 featuredTitle: "Why Use Trento"
 featuredContent:
     1:
-        image: "Image1"
+        image: "user-friendly@2x.png"
         title: "User Friendly"
         caption: "Aenean ut sem risus. Mauris id augue fermentum lectus placerat tin cidunt."
     2:
-        image: "Image2"
+        image: "discover-system-issues@2x.png"
         title: "Discover System Issues"
         caption: "Aenean ut sem risus. Mauris id augue fermentum lectus placerat tin cidunt."
     3:
-        image: "Image3"
+        image: "prevent-downtime@2x.png"
         title: "Prevent Downtime"
         caption: "Aenean ut sem risus. Mauris id augue fermentum lectus placerat tin cidunt."
 subFeatTitle: "Features"
