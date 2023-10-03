@@ -18,15 +18,15 @@ featuredContent:
 subFeatTitle: "Features"
 subFeatContent:
     1:
-        image: "Image1"
+        image: "continous-system-checks@2x.png"
         title: "Continous System Checks"
         caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi vitae varius euismod, tortor erat venenatis orci, ut malesuada lectus arcu quis est."
     2:
-        image: "Image2"
+        image: "multiple-provider-support@2x.png"
         title: "Multiple Provider Support"
         caption: "Phasellus ac ultrices tortor. Nullam consectetur ac lorem accumsan commodo. Nulla at leo iaculis, posuere lacus non, vulputate ex."
     3:
-        image: "Image3"
+        image: "flexible-apis@2x.png"
         title: "Flexible APIs"
         caption: "Aliquam ultrices, odio sit amet finibus dictum, massa tortor fringilla neque, ut maximus mauris nisl ac est. Donec quis laoreet metus. In rutrum tellus eu pretium blandit."
     4:
