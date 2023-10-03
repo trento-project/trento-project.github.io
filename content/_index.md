@@ -36,3 +36,4 @@ subFeatContent:
 ---
 
 ## How it Works
+![Trento Checks Engine](trento-checks-engine@2x.png)
