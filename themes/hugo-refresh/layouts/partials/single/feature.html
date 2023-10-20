@@ -1,6 +1,7 @@
-<h2>{{ .Params.featuredTitle }}</h2>
+<div class="column is-11 container mb-60">
+<h2 class="title is-3">{{ .Params.featuredTitle }}</h2>
 
-<div class="columns is-centered container">
+<div class="columns is-centered is-variable is-5">
     {{ range $block := .Params.featuredContent }}
     <div class="column is-one-third">
         {{ with $image := $.Page.Resources.Get $block.image }}
@@ -12,8 +13,9 @@
 
         <img src="{{ $image.Permalink | relURL }}" width="{{ div $image.Width $imageScale}}" />
         {{ end }}
-        <h3>{{ $block.title }}</h3>
+        <div class="mb-10"><h3 class="title is-5 mt-10">{{ $block.title }}</h3></div>
         <p>{{ $block.caption }}</p>
     </div>
     {{ end }}
+</div>
 </div>
