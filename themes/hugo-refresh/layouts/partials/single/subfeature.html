@@ -3,7 +3,7 @@
     <h2>{{ .Params.subfeatTitle }}</h2>
 
     {{ range $block := .Params.subfeatContent }}
-    <div class="">
+    <div class="columns">
         {{ with $image := $.Page.Resources.Get $block.image }}
         {{ $imageScale := 1 }}
 
@@ -11,10 +11,14 @@
             {{ $imageScale = 2 }}
         {{ end }}
 
-        <img src="{{ $image.Permalink | relURL }}" width="{{ div $image.Width $imageScale}}" />
+        <div class="column is-half">
+            <img src="{{ $image.Permalink | relURL }}" width="{{ div $image.Width $imageScale}}" />
+        </div>
         {{ end }}
-        <h3>{{ $block.title }}</h3>
-        <p>{{ $block.caption }}</p>
+        <div class="column">
+            <h3>{{ $block.title }}</h3>
+            <p>{{ $block.caption }}</p>
+        </div>
     </div>
     {{ end }}
     </div>
