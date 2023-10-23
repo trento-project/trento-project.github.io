@@ -1,27 +1,29 @@
-<div class="columns is-centered">
-    <div class="column is-three-fifths">
-    <h2 class="title is-3">{{ .Params.subfeatTitle }}</h2>
+<div class="sub-feature">
+    <div class="columns is-centered">
+        <div class="column is-three-fifths bg-fill-rounded mb-40">
+        <h2 class="title is-3 pt-40">{{ .Params.subfeatTitle }}</h2>
 
-    {{ range $block := .Params.subfeatContent }}
-    <div class="sub-feature-item mb-40">
-        <div class="columns is-vcentered">
-            {{ with $image := $.Page.Resources.Get $block.image }}
-            {{ $imageScale := 1 }}
+        {{ range $block := .Params.subfeatContent }}
+        <div class="sub-feature-item mb-40 px-40">
+            <div class="columns is-vcentered">
+                {{ with $image := $.Page.Resources.Get $block.image }}
+                {{ $imageScale := 1 }}
 
-            {{ if hasSuffix $image "@2x.png" }}
-                {{ $imageScale = 2 }}
-            {{ end }}
+                {{ if hasSuffix $image "@2x.png" }}
+                    {{ $imageScale = 2 }}
+                {{ end }}
 
-            <div class="column is-half">
-                <img src="{{ $image.Permalink | relURL }}" width="{{ div $image.Width $imageScale}}" />
-            </div>
-            {{ end }}
-            <div class="column">
-                <h3 class="title is-5">{{ $block.title }}</h3>
-                <p>{{ $block.caption }}</p>
+                <div class="column is-half">
+                    <img src="{{ $image.Permalink | relURL }}" width="{{ div $image.Width $imageScale}}" />
+                </div>
+                {{ end }}
+                <div class="column">
+                    <h3 class="title is-5">{{ $block.title }}</h3>
+                    <p>{{ $block.caption }}</p>
+                </div>
             </div>
         </div>
-    </div>
-    {{ end }}
+        {{ end }}
+        </div>
     </div>
 </div>
