@@ -16,7 +16,9 @@ $loadingImage: "{{- $img.Permalink | relURL }}"
 @import "fresh/core"
 
 a
-  color: #30BA78;
+  color: #30BA78
+  &:hover
+    color: #7DE2BC
 
 .blog img
   display: block
@@ -57,3 +59,18 @@ code
 .bg-fill-rounded
   background-color: #EFFBF6
   border-radius: 10px
+
+h1, h2, h3, h4, h5, h6, p, strong
+  color: #175A3A
+
+.title, .subtitle
+  color: #175A3A
+
+.content
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    color: #175A3A
