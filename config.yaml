@@ -114,9 +114,9 @@ params:
     subtitle: |
         Trento is an open-source cloud-native web console aiming to improve the workday of SAP Applications administrators
     # option to specify image in the homepage
-    image: "/images/trento-logo-stacked.svg" # worker.svg
+    image: "/images/trento-hero-img@2x.png" # worker.svg
     # option to specify the width of the image in the homepage
-    imageWidth: 500px
+    imageWidth: 960px
 
   # footer options
   footer:

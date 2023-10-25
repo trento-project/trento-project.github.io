@@ -4,29 +4,29 @@
     {{- $subtitle   := index $homepage "subtitle" -}}
     {{- $image      := index $homepage "image" -}}
     <div class="hero-body">
-    <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column is-5 is-offset-1">
-                <figure class="image">
+    <div class="container has-text-centered px-20">
+        <div class="columns is-centered">
+            <div class="column is-9">
+                <div class="landing-caption">
+                    <h1 class="title is-2 is-bold is-spaced">
+                    {{- $title -}}
+                    </h1>
+                    {{- with $subtitle -}}
+                    <h2 class="subtitle is-4">
+                    {{ . }}
+                    </h2>
+                    {{- end -}}
+                    {{/*  <p>
+                    <a class="button cta rounded primary-btn raised" href="{{- $buttonLink -}}">
+                        {{- $buttonText -}}
+                    </a>
+                    </p>  */}}
+                </div>
+                <figure>
                     {{- $img := resources.Get $image -}}
                     <img src="{{- $img.Permalink | relURL -}}"
-                         style="width:{{- .Site.Params.homepage.imageWidth -}}" alt="Myself">
+                         style="width:{{- .Site.Params.homepage.imageWidth -}}" alt="Hero">
                 </figure>
-            </div>
-            <div class="column is-5 is-offset-1 landing-caption">
-                <h1 class="title is-1 is-bold is-spaced">
-                {{- $title -}}
-                </h1>
-                {{- with $subtitle -}}
-                <h2 class="subtitle is-3 is-muted">
-                {{ . }}
-                </h2>
-                {{- end -}}
-                {{/*  <p>
-                <a class="button cta rounded primary-btn raised" href="{{- $buttonLink -}}">
-                    {{- $buttonText -}}
-                </a>
-                </p>  */}}
             </div>
         </div>
     </div>
