@@ -69,6 +69,7 @@ params:
   mainPage:
     # option to specify the main font of the theme
     fontFamily: "Lato"
+    sizes: [400, 700]
 
   # sidebar options
   sidebar:
