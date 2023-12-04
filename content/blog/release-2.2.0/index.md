@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 2.2.0"
-date: 2023-11-21T12:00:00+02:00
+date: 2023-12-04T12:15:00+02:00
 hideLastModified: true
 showInMenu: false
 summary: "Version 2.2.0 deepens the observability capabilities of Trento with the integration of saptune..."
