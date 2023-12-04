@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta name="generator" content="Hugo 0.120.4"><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><title>Trento Project</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://trento-project.io/blog/release-2.2.0/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Announcing Trento Version 2.2.0" /><meta property="og:description" content="Version 2.2.0 deepens the observability capabilities of Trento with the integration of saptune..." /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/blog/release-2.2.0/trento-2-2-0-thumbnail@2x_hub0b55338049ea3d896f2f3b1dd11b583_43846_600x0_resize_box_3.png" /><title>Trento Project - Announcing Trento Version 2.2.0</title>
 
     
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -21,7 +22,7 @@
 
     <div id="preloader">
       <div id="status"></div>
-    </div><section class="hero is-fullheight is-default is-bold"><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
 
@@ -84,24 +85,31 @@
       </div>
     </div>
   </nav>
-<div class="hero-body">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-5 is-offset-1">
-                    <figure class="image"><img src="/images/trento-logo-stacked.svg"
-                             style="width:500px" alt="Myself">
-                    </figure>
-                </div>
-                <div class="column is-5 is-offset-1 landing-caption">
-                    <h1 class="title is-1 is-bold is-spaced">The single pane of glass for your SAP Applications</h1><h2 class="subtitle is-3 is-muted">
-                    Trento is an open-source cloud-native web console aiming to improve the workday of SAP Applications administrators
-
-                    </h2>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section><footer class="footer footer-dark">
+<section class="section is-medium">
+  <div class="container blog">
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Announcing Trento Version 2.2.0</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        <section class="section content has-text-justified"><p>Version 2.2.0 deepens the observability capabilities of Trento with the integration of saptune in the console and kicks off the process to expand the configuration checks catalog to other HA scenarios, such as ASCS/ERS clusters, and other targets in the environment, such as hosts.</p>
+<h1 id="saptune-web-integration">Saptune Web Integration</h1>
+<p>Saptune is a solution that comes with SLES for SAP and allows SAP admins to ensure that their SAP hosts are properly configured to run the corresponding SAP workloads. The integration of saptune in the Trento console gives the SAP admin visibility over the tool even when they are not working at operating system level. The integration supports <a href="https://www.suse.com/c/saptune-3-1-on-the-horizon" title="Read more about saptune 3.1.0">saptune 3.1.0</a> and higher, and includes the addition of the host tuning status in the aggregated health status of the host.</p>
+<p><img src="saptune-web-integration@2x.png" alt="Saptune Web Integration for Trento"></p>
+<h1 id="instance-clean-up-capabilities">Instance Clean-up Capabilities</h1>
+<p><a href="/blog/release-2.1.0" title="Read the release announcement for Trento v2.1.0">Version 2.1.0</a> delivered host clean-up capabilities, allowing the SAP admin to remove from the console hosts that are no longer part of their SAP environment. But in certain scenarios, removing a host altogether might not be necessary and the SAP admin might need to remove, only, some of the instances discovered in that host. For example, imagine a host where two SAP systems are running but, for performance reasons one of them is migrated to another host. In that case, we just need to ensure that the migrated SAP system is no longer showing in the source host.</p>
+<p>The new version of Trento covers this scenario and allows SAP Basis to do clean-up on an instance base. When a discovered instance is no longer found, a clean-up button shows up next to that particular instance both in the SAP systems overview and the corresponding SAP system details view allowing the SAP admin to get rid of it.</p>
+<p><img src="clean-up-capabilites@2x.png" alt="Trento Clean-up Capabilites"></p>
+<h1 id="ability-to-run-host-level-configuration-checks">Ability to Run Host-level Configuration Checks</h1>
+<p>The new checks engine introduced by version 2.0.0 opened the door to extend the checks catalog beyond HA clusters, to other targets in the environment such as hosts, HANA databases and SAP systems. Version 2.2.0 is a first step in that process and enables the application to perform host specific checks. Soon we will have in our catalog saptune specific checks, complementing the integration of saptune in the Trento web console, and hardening checks, ensuring that our hosts are properly configured from a security point of view.</p>
+<p><img src="host-configuration-checks@2x.png" alt="Trento Host Configuration Checks"></p>
+<p>In addition to the features listed above, version 2.2.0 comes with a full set of new gatherers that will allow us to implement new configuration checks for ASCS/ERS clusters. It also delivers a number of bug fixes, including a correction on how the application handles scenarios where two instances in the same SAP system share the same instance number.</p>
+<h1 id="are-you-wanting-to-upgrade-or-try-out-trento">Are you wanting to upgrade or try out Trento?</h1>
+<p>Follow the <a href="https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html" title="Getting started with Trento Premium">instructions in our documentation</a> to get started.</p>
+</section>
+      </div>
+    </div>
+  </div></section><footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
       <div class="column">
