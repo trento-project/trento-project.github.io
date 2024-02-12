@@ -6,13 +6,10 @@
 {{- $font1     := replace .Site.Params.mainPage.fontFamily " " "+" -}}
 {{- $font2     := replace .Site.Params.sidebar.fontFamily " " "+" -}}
 {{- $font3     := replace .Site.Params.navbar.fontFamily " " "+" -}}
-{{/*  {{- $fontSizes := delimit .Site.Params.mainPage.sizes "," -}}  */}}
-{{/*  {{- $fontUrl1     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font1 $fontSizes -}}
+{{- $fontSizes := delimit .Site.Params.mainPage.sizes "," -}}
+{{- $fontUrl1     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font1 $fontSizes -}}
 {{- $fontUrl2     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font2 $fontSizes -}}
-{{- $fontUrl3     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font3 $fontSizes -}}  */}}
-{{- $fontUrl1  := printf "https://fonts.googleapis.com/css?family=%s" $font1 -}}
-{{- $fontUrl2  := printf "https://fonts.googleapis.com/css?family=%s" $font2 -}}
-{{- $fontUrl3  := printf "https://fonts.googleapis.com/css?family=%s" $font3 -}}
+{{- $fontUrl3     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font3 $fontSizes -}}
 
 <link href="{{- $fontUrl1 -}}" rel="stylesheet">
 <link href="{{- $fontUrl2 -}}" rel="stylesheet">
