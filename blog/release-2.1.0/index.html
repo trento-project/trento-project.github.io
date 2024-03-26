@@ -95,18 +95,34 @@
         <section class="section content has-text-justified"><p>Trento 2.0.0 was a turning point in the Project as it introduced a redesigned, more secure and faster checks engine. Past this milestone, the Project refocuses on strengthening the application capabilities around configuration checks -to leverage the new checks engine-, monitoring -to improve observability- and, ultimately, automation. New versions with new user-facing features will be delivered at a faster pace and Trento 2.1.0 is just the first step in the road.</p>
 <h1 id="ascsers-cluster-discovery">ASCS/ERS Cluster Discovery</h1>
 <p>Trento 2.1.0 is able to discover ASCS/ERS clusters, from the simplest set-up with one SAP system and two-nodes, to clusters running multiple systems and nodes. The discovery process covers both versions of the Enqueue Server, ENSA1 and ENSA2, and, also, both scenarios where the instance filesystems are managed by the cluster and scenarios with a simple mount setup.</p>
-<p><img src="trento-ascs-ers-cluster@2x.png" alt="Trento ASCS/ERS Cluster Discovery"></p>
+<p><figure>
+    <img src="trento-ascs-ers-cluster@2x.png" alt="Trento ASCS/ERS Cluster Discovery">
+    <figcaption></figcaption>
+</figure>
+</p>
 <h1 id="more-insightful-checks-results-view">More Insightful Checks Results View</h1>
 <p>Trento 2.1.0 comes with a redesigned checks results view that leverages the full potential of the new checks engine and provides the user with deeper insights about the check execution.</p>
 <p>The current check results view is host centric. You have a section for each host in the cluster and, in each section, you see the results of the check executions in that host. If the user has selected a large number of checks, this distribution makes it hard to understand the check behaviour across the cluster.</p>
 <p>The new checks results view gives priority to the check itself. And for any given check you are able to expand the corresponding row to get more information at host level. Additionally, for each not-met expectation, there will be a detailed view providing information about it: what facts were gathered, what values were expected and what was the result of the evaluation. This will help users understand better why a certain configuration check is failing.</p>
-<p><img src="trento-insightful-checks@2x.png" alt="Trento Insight Check Results"></p>
+<p><figure>
+    <img src="trento-insightful-checks@2x.png" alt="Trento Insight Check Results">
+    <figcaption></figcaption>
+</figure>
+</p>
 <h1 id="host-clean-up-capabilities">Host Clean-up Capabilities</h1>
 <p>The cleanup feature that comes with Trento 2.1.0 will enable users to soft delete from the console hosts that are no longer part of the SAP environment. Right now, once a host has been registered, you cannot take it away nor any of the resources running on it. Imagine you have completed a migration to S4HANA, and you decommission one of the source ECC systems. You no longer need to see the hosts that are part of that ECC system in the console. This feature will help you get rid of them.</p>
-<p><img src="trento-hosts-clean-up@2x.png" alt="Trento Hosts Clean up"></p>
+<p><figure>
+    <img src="trento-hosts-clean-up@2x.png" alt="Trento Hosts Clean up">
+    <figcaption></figcaption>
+</figure>
+</p>
 <p>The feature will become available in the console when the heartbeat of an agent has failed for a certain period of time. When that happens, an option to clean up the host will show up both in the Hosts overview and the corresponding Host details view.</p>
 <p>When the user clicks on the cleanup button, a box will open asking for confirmation and, if the user gives it, all the components discovered by the agent in that particular host, including the host itself and other components that might depend on the ones running on the host, will be removed from the console.</p>
-<p><img src="trento-host-details-clean-up@2x.png" alt="Trento Host Detail Clean up"></p>
+<p><figure>
+    <img src="trento-host-details-clean-up@2x.png" alt="Trento Host Detail Clean up">
+    <figcaption></figcaption>
+</figure>
+</p>
 <h1 id="are-you-wanting-to-upgrade-or-try-out-trento">Are you wanting to upgrade or try out Trento?</h1>
 <p>Follow the <a href="https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html" title="Getting started with Trento Premium">instructions in our documentation</a> to get started.</p>
 </section>
@@ -198,7 +214,7 @@
   </div>
   <div class="inner">
     <ul class="sidebar-menu">
-      <li class="no-children"><a href=""><div class="columns">
+      <li class="no-children"><div class="columns">
               <table width="100%">  
                 <tr>
                   <td class="">

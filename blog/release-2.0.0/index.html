@@ -92,11 +92,19 @@
         <h1 class="title is-2 section-title">Announcing Trento Version 2.0.0</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
-        <section class="section content has-text-justified"><p><img src="trento-release-2-0-0-hero@2x.png" alt="Trento Release Version 2.0.0"></p>
+        <section class="section content has-text-justified"><p><figure>
+    <img src="trento-release-2-0-0-hero@2x.png" alt="Trento Release Version 2.0.0">
+    <figcaption></figcaption>
+</figure>
+</p>
 <p>Available beginning of May’23, Trento 2.0.0 brings major changes to the architecture of the solution and therefore it will be <strong>necessary an update on both the server</strong> and the agents for those customers that are already using Trento.</p>
 <p>The main change in the new version is a brand-new SSH-less checks engine, but it also adds VMware to the list of known platforms and provides versioned external APIs for both the web and engine components.</p>
 <h1 id="ssh-less-checks-engine">SSH-less Checks Engine</h1>
-<p><img src="trento-checks-engine@2x.png" alt="Trento Checks Engine"></p>
+<p><figure>
+    <img src="trento-checks-engine@2x.png" alt="Trento Checks Engine">
+    <figcaption></figcaption>
+</figure>
+</p>
 <p>The old engine required an SSH connection from the server to the cluster nodes to execute the checks, which were nothing but Ansible playbooks. With the new Checks Engine, the SSH connection is no longer necessary, which <strong>massively improves the security and performance</strong> of the entire system. Moving forward there will be only one secured, outbound communication channel from the agent host to the server and there will be no need to maintain an SSH key specific for Trento, nor an SSH user with elevated access to execute the Ansible playbooks.</p>
 <p>In the new Checks Engine, internally nicknamed <em>Wanda</em>, the execution of a check is split in two stages. On the client side, the Trento Agent is responsible for collecting the required data: we call this <em>fact gathering</em>. The <em>facts</em> are sent by the Agent to the <em>Wanda</em> server component, which in turn performs the evaluation of the <em>expectations</em> about these facts. This division of responsibilities translates in a reduced footprint on SAP hosts and a much better performance.</p>
 <p>The new checks engine comes with a new Domain Specific Language where checks are represented by YAML files with a human readable structure, specifically tailored around the needs of SAP architects and experts, to provide them with a framework to add new configuration validation logic with ease and extend our existing catalog of checks at will.</p>
@@ -142,7 +150,11 @@
 </ul>
 <h1 id="vmware-discovery">VMware Discovery</h1>
 <p>Trento 2.0.0 adds VMware to the list of known platforms, along with Azure, AWS, GCP and on-premise bare metal. With this addition, most customers running SAP systems on SUSE Linux Enterprise Server for SAP are represented in Trento.</p>
-<p><img src="trento-vmware-discovery@2x.png" alt="Trento VMware Discovery"></p>
+<p><figure>
+    <img src="trento-vmware-discovery@2x.png" alt="Trento VMware Discovery">
+    <figcaption></figcaption>
+</figure>
+</p>
 <h1 id="versioned-apis">Versioned APIs</h1>
 <p>Last but not least, both the web and the engine components are now available with a set of versioned public APIs which ultimate goal is to facilitate the integration of Trento with other monitoring tools. With these APIs you can essentially retrieve any information currently displayed in the console, like a list of the registered SAP systems or the status of the node exporter in any given host, and perform any available actions, like selecting and executing checks or setting and removing tags.</p>
 <p>For the browseable OpenAPI specification ouf our APIs, please refer to:</p>
@@ -150,7 +162,11 @@
 <li><a href="https://www.trento-project.io/web/swaggerui/">https://www.trento-project.io/web/swaggerui/</a></li>
 <li><a href="https://www.trento-project.io/wanda/swaggerui/">https://www.trento-project.io/wanda/swaggerui/</a></li>
 </ul>
-<p><img src="trento-external-api@2x.png" alt="Trento External APIs"></p>
+<p><figure>
+    <img src="trento-external-api@2x.png" alt="Trento External APIs">
+    <figcaption></figcaption>
+</figure>
+</p>
 <h1 id="are-you-wanting-to-upgrade-or-try-out-trento">Are you wanting to upgrade or try out Trento?</h1>
 <p>Follow the <a href="https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html" title="Getting started with Trento Premium">instructions in our documentation</a> to get started.</p>
 </section>
@@ -242,7 +258,7 @@
   </div>
   <div class="inner">
     <ul class="sidebar-menu">
-      <li class="no-children"><a href=""><div class="columns">
+      <li class="no-children"><div class="columns">
               <table width="100%">  
                 <tr>
                   <td class="">
