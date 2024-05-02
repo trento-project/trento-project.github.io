@@ -112,7 +112,7 @@ params:
     title: The single pane of glass for your SAP Applications
     # option to specify the subtitle in the homepage
     subtitle: |
-        Trento is an open-source cloud-native web console aiming to improve the workday of SAP Applications administrators
+        Trento is an open-source, bespoke, companion application included with SUSE Linux Enterprise Server for SAP Applications, built by SUSE from the ground up to monitor SAP landscapes and proactively prevent infrastructural issues by diagnosing common configuration mistakes and validating systems against SUSE best practices.
     # option to specify image in the homepage
     image: "/images/trento-hero-img@2x.png" # worker.svg
     # option to specify the width of the image in the homepage
@@ -152,7 +152,7 @@ params:
     #    link: username
     #    title: Instagram
     # option to specify the copyright in the footer
-    copyright: 2019 - 2023 SUSE LLC
+    copyright: 2019 - 2024 SUSE LLC
 
 ###################################################################
 ################## multilanguage support options ##################
