@@ -6,21 +6,21 @@ featuredContent:
     1:
         image: "user-friendly@2x.png"
         title: "User Friendly"
-        caption: "Aenean ut sem risus. Mauris id augue fermentum lectus placerat tin cidunt."
+        caption: "Trento is built with cutting-edge technology to be intuitive and easy to use. It provides just the right amount of information that is really needed at a glance."
     2:
         image: "discover-system-issues@2x.png"
         title: "Discover System Issues"
-        caption: "Aenean ut sem risus. Mauris id augue fermentum lectus placerat tin cidunt."
+        caption: "It automatically discovers how an SAP system is structured and configured, and gives users a comprehensive 10,000 feet view of their entire SAP landscape"
     3:
         image: "prevent-downtime@2x.png"
         title: "Prevent Downtime"
-        caption: "Aenean ut sem risus. Mauris id augue fermentum lectus placerat tin cidunt."
+        caption: "It is designed to help enterprise and integrator system administrators avoid common infrastructure problems that can result in delayed service implementations or unplanned downtime."
 subFeatTitle: "Features"
 subFeatContent:
     1:
         image: "continous-system-checks@2x.png"
         title: "Continous System Checks"
-        caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor, mi vitae varius euismod, tortor erat venenatis orci, ut malesuada lectus arcu quis est."
+        caption: "Trento backend features a configuration validation engine that will issue warnings in case systems are not compliant with SUSE best practices. SAP Architects can extend this engine by building additional system checks with a bespoke YAML-based Domain Specific Language."
     2:
         image: "multiple-provider-support@2x.png"
         title: "Multiple Provider Support"
