@@ -121,7 +121,7 @@ params:
   footer:
     # option to specify the logo in the footer
     # the starting folder is configure in "assetDir" of this file
-    logo: "/images/trento-logo-horizontal.svg"
+    logo: "/images/trento-logo-horizontal-dark.svg"
     # option to specify your contact email in the footer
     email:
       link: trento-project@suse.com
