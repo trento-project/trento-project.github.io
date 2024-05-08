@@ -18,13 +18,13 @@ featuredContent:
 subFeatTitle: "Features"
 subFeatContent:
     1:
+        image: "monitoring@2x.png"
+        title: "Monitoring"
+        caption: "Phasellus ac ultrices tortor. Nullam consectetur ac lorem accumsan commodo. Nulla at leo iaculis, posuere lacus non, vulputate ex."
+    2:
         image: "continous-system-checks@2x.png"
         title: "Continous System Checks"
         caption: "Trento backend features a configuration validation engine that will issue warnings in case systems are not compliant with SUSE best practices. SAP Architects can extend this engine by building additional system checks with a bespoke YAML-based Domain Specific Language."
-    2:
-        image: "multiple-provider-support@2x.png"
-        title: "Multiple Provider Support"
-        caption: "Phasellus ac ultrices tortor. Nullam consectetur ac lorem accumsan commodo. Nulla at leo iaculis, posuere lacus non, vulputate ex."
     3:
         image: "flexible-apis@2x.png"
         title: "Flexible APIs"
