@@ -6,14 +6,17 @@
 {{- $font1     := replace .Site.Params.mainPage.fontFamily " " "+" -}}
 {{- $font2     := replace .Site.Params.sidebar.fontFamily " " "+" -}}
 {{- $font3     := replace .Site.Params.navbar.fontFamily " " "+" -}}
+{{- $font4     := replace .Site.Params.mainPage.bodyFontFamily " " "+" -}}
 {{- $fontSizes := delimit .Site.Params.mainPage.sizes "," -}}
 {{- $fontUrl1     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font1 $fontSizes -}}
 {{- $fontUrl2     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font2 $fontSizes -}}
 {{- $fontUrl3     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font3 $fontSizes -}}
+{{- $fontUrl4     := printf "https://fonts.googleapis.com/css?family=%s:%s" $font4 $fontSizes -}}
 
 <link href="{{- $fontUrl1 -}}" rel="stylesheet">
 <link href="{{- $fontUrl2 -}}" rel="stylesheet">
 <link href="{{- $fontUrl3 -}}" rel="stylesheet">
+<link href="{{- $fontUrl4 -}}" rel="stylesheet">
 
 {{- $css  := resources.Get $sass | resources.ExecuteAsTemplate $scss . | toCSS $cssOpts -}}
 {{- $css1 := resources.Get "css/monokai-sublime.9.15.8.min.css" -}}
