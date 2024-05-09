@@ -4,16 +4,20 @@
         <div class="column is-three-fifths-desktop is-three-quarters-tablet bg-fill-rounded px-40 mb-40">
         <h2 class="title is-3 pt-40">{{ .Params.subfeatTitle }}</h2>
 
-        {{ range $block := .Params.subfeatContent }}
+        {{ range $index, $block := .Params.subfeatContent }}
         <div class="sub-feature-item mb-40">
-            <div class="columns is-vcentered">
+            {{ if modBool $index 2 }}
+                <div class="columns is-vcentered is-row-reversed">
+                {{else}}
+                <div class="columns is-vcentered">
+            {{ end }}
+
                 {{ with $image := $.Page.Resources.Get $block.image }}
                 {{ $imageScale := 1 }}
 
                 {{ if hasSuffix $image "@2x.png" }}
                     {{ $imageScale = 2 }}
                 {{ end }}
-
                 <div class="column is-half">
                     <img src="{{ $image.Permalink | relURL }}" width="{{ div $image.Width $imageScale}}" />
                 </div>
