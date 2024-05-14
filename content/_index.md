@@ -10,7 +10,7 @@ featuredContent:
     2:
         image: "discover-system-issues@2x.png"
         title: "Discover System Issues"
-        caption: "It automatically discovers how an SAP system is structured and configured, and gives users a comprehensive 10,000 feet view of their entire SAP landscape"
+        caption: "It automatically discovers how an SAP system is structured and configured, and gives users a comprehensive overview of their entire SAP landscape."
     3:
         image: "prevent-downtime@2x.png"
         title: "Prevent Downtime"
