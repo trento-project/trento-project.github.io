@@ -23,8 +23,8 @@ subFeatContent:
         caption: "Trento integrates with a Prometheus backend and ad-hoc exporters to provide real-time metrics on business-critical SAP infrastructure. Unlike generic observability solutions, Trento provides contextual information that are peculiar to how SAP systems are structured."
     2:
         image: "continous-system-checks@2x.png"
-        title: "Continous System Checks"
-        caption: "Trento backend features a configuration validation engine that will issue warnings in case systems are not compliant with SUSE best practices. SAP Architects can extend this engine by building additional system checks with a bespoke YAML-based Domain Specific Language."
+        title: "System Configuration Checks"
+        caption: "Trento features a bespoke configuration validation engine designed to promptly flag any non-compliant system configurations, aligning with SUSE's industry-leading best practices. SAP Architects can extend this engine by building additional system checks with a YAML-based Domain Specific Language."
     3:
         image: "flexible-apis@2x.png"
         title: "Flexible APIs"
