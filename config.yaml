@@ -109,10 +109,10 @@ params:
     # this options let you specify the text of the link to the homepage
     linkText: "Home"
     # option to specify the title in the homepage
-    title: The single pane of glass for your SAP Applications
-    # option to specify the subtitle in the homepage
+    title: The perfect companion for SUSE Linux Enterprise Server for SAP Applications
+      # option to specify the subtitle in the homepage
     subtitle: |
-        Trento is an open-source, bespoke, companion application included with SUSE Linux Enterprise Server for SAP Applications, built by SUSE from the ground up to monitor SAP landscapes and proactively prevent infrastructural issues by diagnosing common configuration mistakes and validating systems against SUSE best practices.
+        Trento is an open-source web application, built by SUSE, to monitor SAP landscapes and proactively prevent infrastructural issues by diagnosing common configuration mistakes and validating systems against SUSE best practices.
     # option to specify image in the homepage
     image: "/images/trento-hero-img@2x.png" # worker.svg
     # option to specify the width of the image in the homepage

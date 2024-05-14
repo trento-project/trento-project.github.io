@@ -20,7 +20,7 @@ subFeatContent:
     1:
         image: "monitoring@2x.png"
         title: "Monitoring"
-        caption: "Phasellus ac ultrices tortor. Nullam consectetur ac lorem accumsan commodo. Nulla at leo iaculis, posuere lacus non, vulputate ex."
+        caption: "Trento integrates with a Prometheus backend and ad-hoc exporters to provide real-time metrics on business-critical SAP infrastructure. Unlike generic observability solutions, Trento provides contextual information that are peculiar to how SAP systems are structured."
     2:
         image: "continous-system-checks@2x.png"
         title: "Continous System Checks"
@@ -28,7 +28,7 @@ subFeatContent:
     3:
         image: "flexible-apis@2x.png"
         title: "Flexible APIs"
-        caption: "Aliquam ultrices, odio sit amet finibus dictum, massa tortor fringilla neque, ut maximus mauris nisl ac est. Donec quis laoreet metus. In rutrum tellus eu pretium blandit."
+        caption: "Powered by an API-driven design, all the data consumed via the web UI can also be leveraged by third-party systems via transparent, explicitly specified and documented integration interfaces."
     4:
         image: ""
         title: "And more..."
