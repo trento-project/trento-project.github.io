@@ -6,11 +6,11 @@ It is made with [Hugo](https://gohugo.io/).
 
 First, [get Hugo](https://gohugo.io/installation/).
 
-The Hero and other common features of the theme are set in ´config.yaml´.
+The Hero and other common features of the theme are set in `config.yaml`.
 
-If you need to add content, just put a new markdown file inside the ´content´ directory, according to existing directory structure (please refer to Hugo docs for more info, or try to figure it out from existing content). 
+If you need to add a new page or a blog post, just put a new markdown file inside the `content` directory, according to existing directory structure (please refer to Hugo docs for more info, or try to figure it out from existing content). 
 
-If you need to customize the css, edit the ´themes/hugo-refresh/assets/style.sass´.
+If you need to customize the css, edit `themes/hugo-refresh/assets/style.sass`.
 
 ## License
 
