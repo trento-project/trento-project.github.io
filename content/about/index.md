@@ -5,9 +5,9 @@ hideLastModified: true
 showInMenu: true
 # no need for the "summary" parameter as it is not displayed in any previews
 ---
-Trento is a new open-source cloud-native web console aiming to improve the workday of SAP Applications administrators.
-
 SAP Applications represent most of the biggest mission-critical systems in the world, which makes it extremely important and complex. Also, the increasing pace of new technological trends adoption requires modern solutions to support the speed imposed by the digital transformation era.
+
+The Trento project was conceived to address this complexity and abstract the challenges of operating SAP workloads away from sensitive Operative System tasks.
 
 ### Our Vision
 
@@ -26,6 +26,6 @@ _Trento is a city on the Adige River in Trentino-Alto Adige/Südtirol in Italy.
 often ranking highly among Italian cities for quality of life, standard of
 living, and business and job opportunities._ ([source](https://en.wikipedia.org/wiki/Trento))
 
-Inspired by the qualities of Trento city and our goal of providing a better life quality for the SAP Administrators, we felt that _Trento_ was the right choice for the project name.
+Inspired by the qualities of Trento city and our goal of providing Quality of Life improvements in the daily tasks of SAP Administrators, we felt that _Trento_ was the right choice for the project name.
 
 We hope that using our project makes you feel like visiting Trento and provides you a great time!

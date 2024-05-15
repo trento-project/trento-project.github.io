@@ -1,0 +1,7 @@
+{{- $class  := printf " %s" (.Get "class") -}}
+{{- $link  := printf "%s" (.Get "link") -}}
+{{- $alt  := printf "%s" (.Get "alt") -}}
+
+<a class="mt-10 button {{- $class -}}" alt="{{- $alt -}}" href="{{- $link -}}" target="_blank">
+    {{- .Inner -}}
+</a>

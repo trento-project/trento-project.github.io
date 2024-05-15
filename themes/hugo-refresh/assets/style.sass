@@ -16,7 +16,15 @@ $loadingImage: "{{- $img.Permalink | relURL }}"
 @import "fresh/core"
 
 a
-  color: #30BA78;
+  color: #30BA78
+  &:hover
+    color: #7DE2BC
+
+.button.is-primary
+  font-weight: bold
+  background-color: #30BA78
+  &:hover
+    background-color: #7DE2BC
 
 .blog img
   display: block
@@ -46,3 +54,66 @@ code
 
 .hljs-comment, .hljs-deletion, .hljs-meta
   color: #6970c6 !important
+
+.navbar.is-fresh
+  position: absolute
+  left: 0
+  right: 0
+  background-color: transparent
+
+.homepage-content h2
+  font-size: 2rem
+  font-weight: 600
+  line-height: 1.125
+  margin-bottom: 1.5rem
+  margin-top: 60px
+
+.bg-fill-rounded
+  background-color: #EFFBF6
+  border-radius: 10px
+
+h1, h2, h3, h4, h5, h6, p, strong
+  color: #175A3A
+
+.title, .subtitle
+  color: #175A3A
+
+.content
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    color: #175A3A
+
+.hero.is-large .hero-body
+  padding-bottom: 0
+
+.hero-body, .hero.is-fullheight .hero-body
+  background-color: #98CFB8
+  background: linear-gradient(180deg, rgba(152,207,184,0.1) 0%, rgba(104,198,159,1) 100%);
+  align-items: end
+
+.hero-body figure > img
+  display: block
+  margin: 0 auto
+  box-shadow: 0px -4px 24px -20px black
+
+.footer.footer-dark h3
+  color: #fff;
+
+.is-row-reversed
+  flex-direction: row-reverse
+
+@media (max-width: 767px)
+  .landing-caption
+    margin-bottom: 20%
+
+@media (min-width: 768px)
+  .landing-caption
+    margin-bottom: 10%
+
+.homepage-content p
+  margin-bottom: 1rem
+  padding: 0 6rem
