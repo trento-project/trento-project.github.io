@@ -5,9 +5,9 @@ hideLastModified: true
 showInMenu: true
 # no need for the "summary" parameter as it is not displayed in any previews
 ---
-SAP Applications represent most of the biggest mission-critical systems in the world, which makes it extremely important and complex. Also, the increasing pace of new technological trends adoption requires modern solutions to support the speed imposed by the digital transformation era.
+SAP Applications represent most of the biggest mission-critical systems in the world, which makes them extremely important while also being quite complex. Also, the increasing pace of new technological trends adoption requires modern solutions to support the speed imposed by the digital transformation era.
 
-The Trento project was conceived to address this complexity and abstract the challenges of operating SAP workloads away from sensitive Operative System tasks.
+The Trento project was conceived to address this complexity and abstract away the challenges of operating SAP workloads from sensitive and error-prone Operative System tasks.
 
 ### Our Vision
 
