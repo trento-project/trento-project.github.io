@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 2.3.0"
-date: 2024-05-22T07:00:00+02:00
+date: 2024-06-18T12:15:00+02:00
 hideLastModified: true
 showInMenu: false
 summary: "Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server..."
