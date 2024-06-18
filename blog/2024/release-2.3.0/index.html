@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://trento-project.io/blog/2024/release-2.3.0/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Announcing Trento Version 2.3.0" /><meta property="og:description" content="Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server..." /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/blog/2024/release-2.3.0/trento-2-3-0-thumbnail@2x_hu449c98d35594a2c98fccb4294e38e766_13069_600x0_resize_box_3.png" /><title>Trento Project - Announcing Trento Version 2.3.0</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.ea05492732c112b80e9c54c8ffc4baf369beb68be8f824cc129db85325a1cdc1.css" integrity="sha256-6gVJJzLBErgOnFTI/8S682m&#43;tovo&#43;CTMEp24UyWhzcE=">
+<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.91376415864fdd3a92be524052267afece4bdb1bb8c6c754f5e60c5ac28e93be.css" integrity="sha256-kTdkFYZP3TqSvlJAUiZ6/s5L2xu4xsdU9eYMWsKOk74=">
+<link rel="stylesheet" type="text/css" href="/css/icons.f72c0103ff9598115ab2a76351494b950570479ce3f1795fec13fc62e4185dcf.css" integrity="sha256-9ywBA/&#43;VmBFasqdjUUlLlQVwR5zj8Xlf7BP8YuQYXc8=">
+<link rel="stylesheet" type="text/css" href="/css/refresh.ccfd23f8053a1571a3e474a6877f42a6a1924c6bbf1b64c7704b49a0353b4650.css" integrity="sha256-zP0j&#43;AU6FXGj5HSmh39CpqGSTGu/G2THcEtJoDU7RlA=">
+<link rel="stylesheet" type="text/css" href="/css/devicon.min.149016fbf45c8bc157d6f55ce3ee875feaa3f90446bf7d151fbc16a9f21a8859.css" integrity="sha256-FJAW&#43;/Rci8FX1vVc4&#43;6HX&#43;qj&#43;QRGv30VH7wWqfIaiFk=">
+    
+
+  </head>
+  <body>
+     
+
+    <div id="preloader">
+      <div id="status"></div>
+    </div><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+
+      
+      <a class="navbar-item" href="/">
+        <img src="/images/trento-logo-horizontal.svg" alt="trento logo" />
+      </a>
+      <div class="navbar-item is-expanded"></div>
+      <a class="navbar-item is-hidden-desktop">  
+        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+          Menu
+        </div>
+        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+          <svg width="1000px" height="1000px">
+            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+            <path class="path2" d="M 300 500 L 700 500"></path>
+            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+          </svg>
+          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+        </div>
+      </a>
+    </div><div id="navbar-menu" class="navbar-menu is-static">
+      
+      <div class="navbar-end">
+        
+          <a href="/" class="navbar-item is-secondary">Home</a><a href="/about/" class="navbar-item is-secondary">About</a><a href="/blog/" class="navbar-item is-secondary">Blog</a>
+        
+        
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+      <div class="navbar-brand">
+  
+        
+        <a class="navbar-item" href="/">
+          <img src="/images/trento-logo-horizontal.svg" alt="trento logo" />
+        </a>
+        <div class="navbar-item is-expanded"></div>
+        <a class="navbar-item is-hidden-desktop">  
+          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">
+            Menu
+          </div>
+          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path class="path2" d="M 300 500 L 700 500"></path>
+              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+        </a>
+      </div><div id="cloned-navbar-menu" class="navbar-menu is-static">
+        <div class="navbar-end"><a href="/" class="navbar-item is-secondary">Home</a><a href="/about/" class="navbar-item is-secondary">About</a><a href="/blog/" class="navbar-item is-secondary">Blog</a>
+          
+          
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+<section class="section is-medium">
+  <div class="container blog">
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Announcing Trento Version 2.3.0</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+        <section class="section content has-text-justified"><p>Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server based on rpm packages, enhanced discovery capabilities and a simpler, safer architecture thanks to the removal of Grafana and the introduction of a rotating API key. Let&rsquo;s review these new features more in detail.</p>
+<h1 id="non-k8s-installation-of-trento-server">Non-K8s Installation of Trento Server</h1>
+<p>Trento was born as a cloud-native application and, as such, the server was only available until now as a set of container images that could be pulled from the SUSE registry and deployed on any certified Kubernetes distribution.</p>
+<p>But time has shown us that the usage of Kubernetes technology is a challenge for many SAP customers. Sometimes because they don’t have exposure to the technology, sometimes because it forces them to rely on other areas of their IT organizations.</p>
+<p>Regardless the reason, we have decided to provide a alternative installation process for Trento Server based on rpm packages, which will be available in the repositories of <a href="https://www.suse.com/products/sles-for-sap/">SLES for SAP 15 SP3</a> and higher. Customers will have a choice of performing the installation manually step-by-step or automating it using an Ansible playbook.</p>
+<p>When a customer chooses to deploy Trento Server using rpms, the different components will be available as regular systemd services.</p>
+<p><figure>
+    <img src="trento-rpm-install@2x.png" alt="Trento RPM Installation">
+    <figcaption></figcaption>
+</figure>
+</p>
+<h1 id="enhanced-discovery-capabilities">Enhanced Discovery Capabilities</h1>
+<p>Monitoring is one of the cornerstones of Trento and Trento 2.3 comes with significant enhancements on this regard. Particularly, in terms of discovery.</p>
+<p>For starters we have improved the support for HANA multi-tenant scenarios. A few customers had reported discovery issues when different systems were using the same HANA database. These issues were caused by a restrictive internal representation of the systems in the Trento database. So we have revisited this representation to ensure that those discovery issues don’t happen any more.</p>
+<p><figure>
+    <img src="sap-systems-multi-tenant@2x.png" alt="SAP Systems Hana Multi-tenant">
+    <figcaption></figcaption>
+</figure>
+</p>
+<p>Trento 2.3 is able to discover HANA scale-out clusters, in addition to the HANA scale-up and ASCS/ERS clusters supported until now. The discovery includes nodes not running HANA workloads, for example a majority maker, and it provides information about the roles of the nameserver and indexserver services in each relevant node.</p>
+<p>This new version is able to discover clusters using diskless SBD fencing and the discovery is aware of maintenance situations. It can detect a maintenance status at three different levels: the cluster itself, one particular node or one particular resource in one node.</p>
+<p><figure>
+    <img src="cluster-fencing-with-maintenance@2x.png" alt="Cluster Details with Fencing and Maintenance">
+    <figcaption></figcaption>
+</figure>
+</p>
+<h1 id="integration-with-suse-manager">Integration with SUSE Manager</h1>
+<p>The integration of Trento and <a href="https://www.suse.com/products/suse-manager/">SUSE Manager (SUMA)</a> is strategic for SUSE as we believe that SAP customers can greatly benefit from both applications working together. Trento brings the intelligence about the SAP environment while SUMA provides operational capabilities to maintain the OS up to date.</p>
+<p>This version of Trento brings a first iteration in this integration effort. By entering the connection data for a SUMA instance where the Trento hosts are also registered, the SAP admin will be able to know how many software updates are available for those hosts and, more importantly, if any of them are security related and therefore critical.</p>
+<p><figure>
+    <img src="suse-manager-with-software-updates@2x.png" alt="SUSE Manager with Software Updates">
+    <figcaption></figcaption>
+</figure>
+</p>
+<p>Just a first step in a road that will get us to a point where the SAP administrator is able to orchestrate the patching of the operating system of their SAP environments via Trento with SUMA in the background. We will approach this goal progressively, starting with the application of individual patches on a given host, continuing with the patching of the nodes of a cluster, then the patching of all the hosts that part of one SAP system and wrapping it up with the orchestration of the patching of an entire landscape: first development, then quality assurance, finally production, or whatever roles the customer might have defined in their environment.</p>
+<h1 id="rotating-api-key">Rotating API Key</h1>
+<p>In SUSE in general, and in the Trento team in particular, we strive to make our applications as secure as possible. This is another step in that direction. The API key protects the communication from the agent to the server. By allowing the customer to change it and even set an expiration date on it, we further protect this communication from modification, theft and other forms of compromise.</p>
+<p><figure>
+    <img src="trento-rotating-api-key@2x.png" alt="Trento Rotating API Key">
+    <figcaption></figcaption>
+</figure>
+</p>
+<h1 id="saptune-configuration-checks">Saptune Configuration Checks</h1>
+<p>The previous version of Trento brought the integration of <a href="https://github.com/SUSE/saptune">saptune</a> into the console, giving SAP administrators visibility on the tool even when they are not working at operating system level. Version 2.3.0 of Trento reinforces such integration by introducing saptune related configuration checks, which has been possible thanks to significant improvements in the Checks development environment. Now we can execute checks not only against clusters but also individual hosts and they can behave in a non-boolean fashion, understanding expectations which evaluations can return a range of results rather than a simple true or false. On this regard, there are two types of saptune checks: those that have a host as a target, and those that have a cluster as a target.</p>
+<p><figure>
+    <img src="saptune-checks-host@2x.png" alt="Trento Saptune Checks for Host">
+    <figcaption></figcaption>
+</figure>
+</p>
+<p><figure>
+    <img src="saptune-checks-cluster@2x.png" alt="Trento Saptune Checks for Cluster">
+    <figcaption></figcaption>
+</figure>
+</p>
+<h1 id="more-enhancements">More Enhancements</h1>
+<p>Another step towards simplifying the architecture and strengthening the overall security set up has been the removal of Grafana, which was used to render graphical charts of the metrics collected by prometheus in the dashboard. Now we are using an ad-hoc library called Charts.js which delivers a visualization of the charts better aligned with the rest of the console.</p>
+<p><figure>
+    <img src="trento-graphs@2x.png" alt="Trento Graphs for CPU and Memory">
+    <figcaption></figcaption>
+</figure>
+</p>
+<p>And last but not least, as mentioned above we have introduced significant changes in the checks development environment which will allow us to extend the checks catalog, not just to other scenarios, but also to other targets in the environment such a hosts, HANA databases and SAP systems. The saptune checks are a first step in this process, making it necessary the introduction of additional filtering capabilities in the Checks Catalog view of the console.</p>
+<p><figure>
+    <img src="checks-catalog-cluster-types@2x.png" alt="Trento Checks Catalog Cluster Types">
+    <figcaption></figcaption>
+</figure>
+</p>
+<h1 id="are-you-wanting-to-upgrade-or-try-out-trento">Are you wanting to upgrade or try out Trento?</h1>
+<p>Follow the <a href="https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html" title="Getting started with Trento Premium">instructions in our documentation</a> to get started.</p>
+</section>
+      </div>
+    </div>
+  </div></section><footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns is-variable is-6">
+      <div class="column">
+        <img src="/footer.svg" alt="">
+        
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Website</h3>
+          </div>
+          <ul class="link-list"><li>
+              <a href="/"><span class="icon"><i class="fa fa-home"></i></span> Home</a>
+            </li><li></li>
+          </ul>
+        </div>
+      </div>
+    
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            
+            
+            <li>
+              <a href="https://github.com/trento-project" target="_blank">
+                <span class="icon"><i class="fa fa-github"></i></span>
+                
+                  GitHub
+                
+              </a>
+            </li>
+                         
+            
+            <li>
+              <a href="mailto:trento-project@suse.com" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                
+                  trento-project@suse.com
+                
+              </a>
+            </li>
+            
+                   
+                   
+                   
+          </ul>
+        </div>
+      </div>
+      
+
+      
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                2019 - 2024 SUSE LLC
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</footer>
+    <div id="backtotop"><a href="#"></a></div><div class="sidebar scroll">
+  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
+    
+    <a class="sidebar-close" href="javascript:void(0);">
+      <i data-feather="x"></i>
+    </a>
+  </div>
+  <div class="inner">
+    <ul class="sidebar-menu">
+      <li class="no-children"><div class="columns">
+              <table width="100%">  
+                <tr>
+                  <td class="">
+                    <span class="icon"><i class="fa fa-cubes"></i></span>
+                    All Tags
+                  </td>
+                  <td class="has-text-right" >
+                      
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </a></ul>
+  </div>
+</div>
+<script src="/js/jquery-2.2.4.893e90f6230962e42231635df650f20544ad22affc3ee396df768eaa6bc5a6a2.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="></script>
+  <script src="/js/feather.4.22.0.1ab07abeb9975f283f6b5f29451981be680fbf77ea778f991d457511d210476a.js" integrity="sha256-GrB6vrmXXyg/a18pRRmBvmgPv3fqd4&#43;ZHUV1EdIQR2o="></script>
+  <script src="/js/modernizr-3.6.0.e013a1e54e3c19d83537ba42b900d34451e5e4b2e789be27a02ac9b152edb741.js" integrity="sha256-4BOh5U48Gdg1N7pCuQDTRFHl5LLnib4noCrJsVLtt0E="></script>
+  <script src="/js/refresh.62c1a9b7d85bcf4d944cd585a01dfa8fb15112a7d2cf9fb819db20493bfe7484.js" integrity="sha256-YsGpt9hbz02UTNWFoB36j7FREqfSz5&#43;4GdsgSTv&#43;dIQ="></script><script src="/js/highlight.9.18.1.b1c58829c55afcc1f568022af4b08ed8976da404d2990b7535bd8e19c0e3310c.js" integrity="sha256-scWIKcVa/MH1aAIq9LCO2JdtpATSmQt1Nb2OGcDjMQw="></script>
+  <script src="/js/highlightjs-line-numbers.2.7.0.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.codeinline').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script></body>
+</html>
