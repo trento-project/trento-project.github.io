@@ -3,8 +3,8 @@
   <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://trento-project.io/blog/2024/release-2.3.0/" />
-    <meta property="og:type" content="article" /><meta property="og:title" content="Announcing Trento Version 2.3.0" /><meta property="og:description" content="Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server..." /><meta property="og:image:width"  content="375" />
-        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/blog/2024/release-2.3.0/trento-2-3-0-thumbnail@2x_hu449c98d35594a2c98fccb4294e38e766_13069_600x0_resize_box_3.png" /><title>Trento Project - Announcing Trento Version 2.3.0</title>
+    <meta property="og:type" content="article" /><meta property="og:title" content="Announcing Trento Version 2.3.1" /><meta property="og:description" content="Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server..." /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/blog/2024/release-2.3.0/trento-2-3-0-thumbnail@2x_hu449c98d35594a2c98fccb4294e38e766_13069_600x0_resize_box_3.png" /><title>Trento Project - Announcing Trento Version 2.3.1</title>
 
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -90,7 +90,7 @@
   <div class="container blog">
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">Announcing Trento Version 2.3.0</h1>
+        <h1 class="title is-2 section-title">Announcing Trento Version 2.3.1</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
         <section class="section content has-text-justified"><p>Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server based on rpm packages, enhanced discovery capabilities and a simpler, safer architecture thanks to the removal of Grafana and the introduction of a rotating API key. Let&rsquo;s review these new features more in detail.</p>
@@ -136,7 +136,7 @@
 </figure>
 </p>
 <h1 id="saptune-configuration-checks">Saptune Configuration Checks</h1>
-<p>The previous version of Trento brought the integration of <a href="https://github.com/SUSE/saptune">saptune</a> into the console, giving SAP administrators visibility on the tool even when they are not working at operating system level. Version 2.3.0 of Trento reinforces such integration by introducing saptune related configuration checks, which has been possible thanks to significant improvements in the Checks development environment. Now we can execute checks not only against clusters but also individual hosts and they can behave in a non-boolean fashion, understanding expectations which evaluations can return a range of results rather than a simple true or false. On this regard, there are two types of saptune checks: those that have a host as a target, and those that have a cluster as a target.</p>
+<p>The previous version of Trento brought the integration of <a href="https://github.com/SUSE/saptune">saptune</a> into the console, giving SAP administrators visibility on the tool even when they are not working at operating system level. Version 2.3.1 of Trento reinforces such integration by introducing saptune related configuration checks, which has been possible thanks to significant improvements in the Checks development environment. Now we can execute checks not only against clusters but also individual hosts and they can behave in a non-boolean fashion, understanding expectations which evaluations can return a range of results rather than a simple true or false. On this regard, there are two types of saptune checks: those that have a host as a target, and those that have a cluster as a target.</p>
 <p><figure>
     <img src="saptune-checks-host@2x.png" alt="Trento Saptune Checks for Host">
     <figcaption></figcaption>
