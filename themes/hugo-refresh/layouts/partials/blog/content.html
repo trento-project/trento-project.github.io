@@ -5,6 +5,13 @@
         <h1 class="title is-2 section-title">{{- .Title -}}</h1>
         <h5 class="subtitle is-5 is-muted">{{- .Params.Subtitle -}}</h5>
         <div class="divider"></div>
+        {{- if not .Params.hideLastModified -}}
+        <div class="blog-meta mt-20">
+          <p class="author is-inline">Written by&nbsp;{{- .Params.Author -}}</p>
+          <p class="seperator is-inline px-10">|</p>
+          <p class="date is-inline">Published&nbsp;{{- .Date.Format "2 January 2006" -}}</p>
+        </div>
+        {{- end -}}
         <section class="section content has-text-justified">
             {{- .Content -}}
         </section>
