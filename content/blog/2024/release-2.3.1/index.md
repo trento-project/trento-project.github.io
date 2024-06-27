@@ -1,10 +1,11 @@
 ---
 title: "Announcing Trento Version 2.3.1"
 date: 2024-06-18T12:15:00+02:00
-hideLastModified: true
+hideLastModified: false
 showInMenu: false
 summary: "Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server..."
 summaryImage: "trento-2-3-0-thumbnail@2x.png"
+author: "Alberto Bravo"
 ---
 
 Trento 2.3 boasts an alternative, more traditional, installation process for Trento Server based on rpm packages, enhanced discovery capabilities and a simpler, safer architecture thanks to the removal of Grafana and the introduction of a rotating API key. Let's review these new features more in detail.
