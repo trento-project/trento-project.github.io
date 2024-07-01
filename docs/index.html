@@ -2,9 +2,9 @@
 <html lang="en">
   <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://trento-project.io/blog/release-2.1.0/" />
-    <meta property="og:type" content="article" /><meta property="og:title" content="Announcing Trento Version 2.1.0" /><meta property="og:description" content="Trento 2.0.0 was a turning point in the Project as it introduced a redesigned, more secure and faster..." /><meta property="og:image:width"  content="375" />
-        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/blog/release-2.1.0/trento-2-1-0-thumbnail@2x_hu3b0339a4466dac953c57545c27321bf3_50867_600x0_resize_box_3.png" /><title>Trento Project - Announcing Trento Version 2.1.0</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://trento-project.io/docs/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Documentation" /><meta property="og:description" content="" /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/images/trento-icon_huadde35ccb1962a0036677ec33d441d81_31858_600x0_resize_q75_box.jpg" /><title>Trento Project - Documentation</title>
 
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -87,49 +87,45 @@
     </div>
   </nav>
 <section class="section is-medium">
-  <div class="container blog">
-    <div class="columns is-centered">
-      <div class="column is-three-fifths is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">Announcing Trento Version 2.1.0</h1>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">Documentation</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
-        <div class="divider"></div><section class="section content has-text-justified"><p>Trento 2.0.0 was a turning point in the Project as it introduced a redesigned, more secure and faster checks engine. Past this milestone, the Project refocuses on strengthening the application capabilities around configuration checks -to leverage the new checks engine-, monitoring -to improve observability- and, ultimately, automation. New versions with new user-facing features will be delivered at a faster pace and Trento 2.1.0 is just the first step in the road.</p>
-<h1 id="ascsers-cluster-discovery">ASCS/ERS Cluster Discovery</h1>
-<p>Trento 2.1.0 is able to discover ASCS/ERS clusters, from the simplest set-up with one SAP system and two-nodes, to clusters running multiple systems and nodes. The discovery process covers both versions of the Enqueue Server, ENSA1 and ENSA2, and, also, both scenarios where the instance filesystems are managed by the cluster and scenarios with a simple mount setup.</p>
-<p><figure>
-    <img src="trento-ascs-ers-cluster@2x.png" alt="Trento ASCS/ERS Cluster Discovery">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="more-insightful-checks-results-view">More Insightful Checks Results View</h1>
-<p>Trento 2.1.0 comes with a redesigned checks results view that leverages the full potential of the new checks engine and provides the user with deeper insights about the check execution.</p>
-<p>The current check results view is host centric. You have a section for each host in the cluster and, in each section, you see the results of the check executions in that host. If the user has selected a large number of checks, this distribution makes it hard to understand the check behaviour across the cluster.</p>
-<p>The new checks results view gives priority to the check itself. And for any given check you are able to expand the corresponding row to get more information at host level. Additionally, for each not-met expectation, there will be a detailed view providing information about it: what facts were gathered, what values were expected and what was the result of the evaluation. This will help users understand better why a certain configuration check is failing.</p>
-<p><figure>
-    <img src="trento-insightful-checks@2x.png" alt="Trento Insight Check Results">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="host-clean-up-capabilities">Host Clean-up Capabilities</h1>
-<p>The cleanup feature that comes with Trento 2.1.0 will enable users to soft delete from the console hosts that are no longer part of the SAP environment. Right now, once a host has been registered, you cannot take it away nor any of the resources running on it. Imagine you have completed a migration to S4HANA, and you decommission one of the source ECC systems. You no longer need to see the hosts that are part of that ECC system in the console. This feature will help you get rid of them.</p>
-<p><figure>
-    <img src="trento-hosts-clean-up@2x.png" alt="Trento Hosts Clean up">
-    <figcaption></figcaption>
-</figure>
-</p>
-<p>The feature will become available in the console when the heartbeat of an agent has failed for a certain period of time. When that happens, an option to clean up the host will show up both in the Hosts overview and the corresponding Host details view.</p>
-<p>When the user clicks on the cleanup button, a box will open asking for confirmation and, if the user gives it, all the components discovered by the agent in that particular host, including the host itself and other components that might depend on the ones running on the host, will be removed from the console.</p>
-<p><figure>
-    <img src="trento-host-details-clean-up@2x.png" alt="Trento Host Detail Clean up">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="are-you-wanting-to-upgrade-or-try-out-trento">Are you wanting to upgrade or try out Trento?</h1>
-<p>Follow the <a href="https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html" title="Getting started with Trento Premium">instructions in our documentation</a> to get started.</p>
+        <div class="divider"></div>
+        <section class="section content has-text-justified"><h2 id="official-suse-documentation">Official SUSE documentation</h2>
+<p>The official documentation is hosted at <strong><a href="https://documentation.suse.com/sles-sap/trento/">documentation.suse.com/sles-sap/trento</a></strong>.</p>
+<p>This is distilled from various upstream components, each with their own documentation.</p>
+<h2 id="upstream-documentation">Upstream documentation</h2>
+<h3 id="trento-web">Trento Web</h3>
+<ul>
+<li><a href="https://www.trento-project.io/web/">Repository documentation</a></li>
+<li><a href="https://www.trento-project.io/web/swaggerui/">OpenAPI specification</a></li>
+</ul>
+<h3 id="trento-wanda">Trento Wanda</h3>
+<ul>
+<li><a href="https://www.trento-project.io/wanda/">Repository documentation</a></li>
+<li><a href="https://www.trento-project.io/wanda/swaggerui/">OpenAPI specification</a></li>
+</ul>
+<h3 id="trento-agent">Trento Agent</h3>
+<ul>
+<li><a href="https://github.com/trento-project/agent/blob/main/README.md">README.md</a></li>
+</ul>
+<h3 id="trento-helm-charts">Trento Helm charts</h3>
+<ul>
+<li><a href="https://github.com/trento-project/helm-charts/blob/main/README.md">README.md</a></li>
+</ul>
+<h3 id="trento-ansible-playbook">Trento Ansible playbook</h3>
+<ul>
+<li><a href="https://github.com/trento-project/ansible/blob/main/README.md">README.md</a></li>
+</ul>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<p>Further notes of various nature are available at <a href="https://github.com/trento-project/docs">github.com/trento-project/docs</a>.</p>
 </section>
       </div>
     </div>
-  </div>
-</section><footer class="footer footer-dark">
+  </div></section>
+<footer class="footer footer-dark">
   <div class="container">
     <div class="columns is-variable is-6">
       <div class="column">
