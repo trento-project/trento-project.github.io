@@ -27,5 +27,8 @@ This is distilled from various upstream components, each with their own document
 ### Trento Helm charts
 - [README.md](https://github.com/trento-project/helm-charts/blob/main/README.md)
 
+### Trento Ansible playbook
+- [README.md](https://github.com/trento-project/ansible/blob/main/README.md)
+
 ### Miscellaneous
 Further notes of various nature are available at [github.com/trento-project/docs](https://github.com/trento-project/docs).
