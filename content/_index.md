@@ -47,4 +47,4 @@ The Trento Agents are shipped with SUSE Linux Enterprise Server for SAP Applicat
 ## Get Started with Trento
 Use Trento with you SAP Application server and improve the overall visibility and discovery of faults which are aligned to the SUSE SAP Best Practice Guidelines.
 
-{{< button class="is-primary" link="https://github.com/trento-project/docs" alt="Start Reading the Trento Documentation" >}}Read Documentation{{< /button >}}
+{{< button class="is-primary" link="/docs" alt="Start Reading the Trento Documentation" >}}Read Documentation{{< /button >}}
