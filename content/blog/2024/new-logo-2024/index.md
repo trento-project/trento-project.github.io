@@ -1,10 +1,11 @@
 ---
 title: "The Story of Trento's Logo Redesign"
 date: 2024-03-22T12:00:00+02:00
-hideLastModified: true
+hideLastModified: false
 showInMenu: false
 summary: "It has been just over 3 years (2 Feb 2021) since the humble beginnings of the Trento project."
 summaryImage: "trento-logo-2024-thumbnail@2x.png"
+author: "Jurgen Goldschmidt" 
 ---
 ![Trento Logo 2024 Landscape](new-trento-logo-landscape@2x.png)
 

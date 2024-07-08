@@ -1,10 +1,11 @@
 ---
 title: "Announcing Trento Version 2.0.0"
 date: 2023-05-04T16:21:00+02:00
-hideLastModified: true
+hideLastModified: false
 showInMenu: false
 summary: "Available beginning of May’23, Trento 2.0.0 brings major changes to the architecture of the solution..."
 summaryImage: "trento-2-0-0-thumbnail@2x.png"
+author: "Alberto Bravo"
 ---
 ![Trento Release Version 2.0.0](trento-release-2-0-0-hero@2x.png)
 

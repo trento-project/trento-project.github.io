@@ -1,10 +1,11 @@
 ---
 title: "Announcing Trento Version 2.1.0"
 date: 2023-08-16T08:20:00+02:00
-hideLastModified: true
+hideLastModified: false
 showInMenu: false
 summary: "Trento 2.0.0 was a turning point in the Project as it introduced a redesigned, more secure and faster..."
 summaryImage: "trento-2-1-0-thumbnail@2x.png"
+author: "Alberto Bravo"
 ---
 
 Trento 2.0.0 was a turning point in the Project as it introduced a redesigned, more secure and faster checks engine. Past this milestone, the Project refocuses on strengthening the application capabilities around configuration checks -to leverage the new checks engine-, monitoring -to improve observability- and, ultimately, automation. New versions with new user-facing features will be delivered at a faster pace and Trento 2.1.0 is just the first step in the road.

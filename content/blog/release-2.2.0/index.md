@@ -1,10 +1,11 @@
 ---
 title: "Announcing Trento Version 2.2.0"
 date: 2023-12-04T12:15:00+02:00
-hideLastModified: true
+hideLastModified: false
 showInMenu: false
 summary: "Version 2.2.0 deepens the observability capabilities of Trento with the integration of saptune..."
 summaryImage: "trento-2-2-0-thumbnail@2x.png"
+author: "Alberto Bravo"
 ---
 
 Version 2.2.0 deepens the observability capabilities of Trento with the integration of saptune in the console and kicks off the process to expand the configuration checks catalog to other HA scenarios, such as ASCS/ERS clusters, and other targets in the environment, such as hosts.
