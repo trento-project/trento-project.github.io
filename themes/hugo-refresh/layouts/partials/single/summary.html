@@ -45,7 +45,7 @@
         </a>
       </figure>
       <h3 class="title is-5 refresh-summary-title">
-        {{ .Params.title }}
+        <a href="{{- .Permalink | relURL -}}">{{ .Params.title }}</a>
       </h3>
       <p class="refresh-summary">
         {{- if .Params.summary -}}
@@ -53,11 +53,13 @@
         {{- else }}
           {{- .Plain -}}
         {{- end -}}
-      </p> 
-      <div class="action has-text-right">
-        <a href="{{- .Permalink | relURL -}}" class="button is-primary">
-                {{ i18n "readMore" }}
-            </a>
-      </div>
+      </p>
+      <div class="has-text-left">
+        {{- if .Params.author -}}
+          {{ .Params.author }}
+        {{- end -}}
+        <br>
+        {{ .Date.Format "2 Jan 2006" }}
+      </div> 
     </div>
   </div>
