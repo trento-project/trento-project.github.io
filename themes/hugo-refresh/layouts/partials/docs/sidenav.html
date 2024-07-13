@@ -1,0 +1,36 @@
+{{ $sections    := where site.Sections "Section" "docs" }}
+
+<aside class="menu" style="padding: 1.5rem;">
+    <div class="is-hidden-desktop" style="position:absolute; top: 1.5rem; left:1.5rem;">
+        <a class="navbar-docs-close">
+            Close
+        </a>
+    </div>
+    
+    {{range $sections}}
+    <div class="nav-section">
+        <a class="menu-label" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .RegularPages }}
+        <ul class="menu-list">
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+
+    {{range .Sections}}
+    <div class="nav-section">
+        <a class="menu-label" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .RegularPages }}
+        <ul class="menu-list">
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    {{ end }}
+</aside>

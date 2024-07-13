@@ -63,7 +63,8 @@ code
   position: absolute
   left: 0
   right: 0
-  background-color: transparent
+  &.is-transparent, a.navbar-item:hover
+    background-color: transparent
 
 .homepage-content h2
   font-size: 2rem
@@ -113,6 +114,9 @@ h1, h2, h3, h4, h5, h6, p, strong
 .homepage-content p
   margin-bottom: 1rem
 
+.nav-section+.nav-section
+  margin-top: 1rem;
+
 @media (max-width: 767px)
   .landing-caption
     margin-bottom: 20%
@@ -124,3 +128,22 @@ h1, h2, h3, h4, h5, h6, p, strong
 @media (min-width: 640px)
   .homepage-content p
     padding: 0 5rem
+
+@media screen and (min-width: 1024px)
+  .main-panel
+    left: 320px
+
+  .sidebar-panel
+    width: 320px
+    z-index: 1
+
+@media screen and (max-width: 1023px)
+  .is-hidden-touch
+    display: none !important;
+
+  .main-panel
+    top: 6rem;
+
+  .sidebar-panel
+    width: 100%
+    z-index: 5000
