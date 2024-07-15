@@ -26,7 +26,14 @@
           </div>
         </a>
       </div>
-  
+      
+      {{- if (eq .Section "docs") -}}
+      <div class="navbar is-light is-hidden-desktop">
+        <div class="navbar-item">
+            <a class="navbar-docs">Docs</a>
+        </div>
+      </div>
+      {{- end -}}
       
       {{- $showIcons := false -}}
       {{- if .Site.Params.navbar.showIcons -}}
