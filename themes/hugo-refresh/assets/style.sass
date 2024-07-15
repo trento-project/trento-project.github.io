@@ -147,8 +147,16 @@ h1, h2, h3, h4, h5, h6, p, strong
     align-items: center
 
   .main-panel
-    top: 6rem;
+    position: absolute
+    top: 6rem
+    overflow-y: auto
 
   .sidebar-panel
+    position: fixed
+    padding-top: 4rem
+    top: 0
     width: 100%
     z-index: 5000
+    overflow: auto
+    background-color: #f3f3f3
+    bottom: 0
