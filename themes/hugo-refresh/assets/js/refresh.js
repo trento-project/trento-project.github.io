@@ -207,4 +207,14 @@ $(document).ready(function () {
                 }
             }
         });
+
+        // Check for click events on the navbar Docs link
+        $(".navbar-docs").click(function() {
+            // Toggle the "is-active" class on sidebar-panel component
+            $(".sidebar-panel").toggleClass("is-hidden-touch");
+        });
+        $(".navbar-docs-close").click(function() {
+            // Toggle the "is-active" class on sidebar-panel component
+            $(".sidebar-panel").toggleClass("is-hidden-touch");
+        });
 })

@@ -19,16 +19,3 @@
 
     {{- partial "sidebar.html" . -}}
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Check for click events on the navbar burger icon
-        $(".navbar-docs").click(function() {
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            $(".sidebar-panel").toggleClass("is-hidden-touch");
-        });
-        $(".navbar-docs-close").click(function() {
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            $(".sidebar-panel").toggleClass("is-hidden-touch");
-        });
-    })
-</script>
