@@ -117,15 +117,18 @@ h1, h2, h3, h4, h5, h6, p, strong
 .nav-section+.nav-section
   margin-top: 1rem
 
+.mainview
+  display: flex
+
 .mainview .navbar, nav .navbar
   display: flex
   align-items: center
 
 .main-panel
-  position: absolute
+  position: relative
 
 .sidebar-panel
-  position: fixed
+  position: relative
   top: 0
   bottom: 0
   padding-top: 4rem
@@ -151,9 +154,6 @@ h1, h2, h3, h4, h5, h6, p, strong
     padding: 0 5rem
 
 @media screen and (min-width: 1024px)
-  .main-panel
-    left: 320px
-
   .sidebar-panel
     width: 320px
     z-index: 1
@@ -161,14 +161,18 @@ h1, h2, h3, h4, h5, h6, p, strong
 @media screen and (max-width: 1023px)
   .is-hidden-touch
     display: none !important
+  
+  .mainview
+    flex-direction: column
 
   .mainview .navbar
     top: 4rem
 
   .main-panel
-    top: 6rem
+    padding-top: 6rem
     overflow-y: auto
 
   .sidebar-panel
+    position: fixed
     width: 100%
     z-index: 5000
