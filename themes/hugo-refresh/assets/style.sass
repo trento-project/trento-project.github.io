@@ -63,7 +63,8 @@ code
   position: absolute
   left: 0
   right: 0
-  background-color: transparent
+  &.is-transparent, a.navbar-item:hover
+    background-color: transparent
 
 .homepage-content h2
   font-size: 2rem
@@ -96,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p, strong
 
 .hero-body, .hero.is-fullheight .hero-body
   background-color: #98CFB8
-  background: linear-gradient(180deg, rgba(152,207,184,0.1) 0%, rgba(104,198,159,1) 100%);
+  background: linear-gradient(180deg, rgba(152,207,184,0.1) 0%, rgba(104,198,159,1) 100%)
   align-items: end
 
 .hero-body figure > img
@@ -105,13 +106,40 @@ h1, h2, h3, h4, h5, h6, p, strong
   box-shadow: 0px -4px 24px -20px black
 
 .footer.footer-dark h3
-  color: #fff;
+  color: #fff
 
 .is-row-reversed
   flex-direction: row-reverse
 
 .homepage-content p
   margin-bottom: 1rem
+
+.nav-section+.nav-section
+  margin-top: 1rem
+
+.main-wrapper
+  display: flex
+
+.main-wrapper .navbar, nav .navbar
+  display: flex
+  align-items: center
+
+.lead-panel
+  position: relative
+
+.sidebar-panel
+  position: relative
+  top: 0
+  bottom: 0
+  padding-top: 4rem
+  background-color: #f0f0f0
+  overflow: auto
+  & .menu
+    padding: 1.5rem
+    & .navbar-docs-close
+      position: absolute
+      top: 1.5rem
+      left: 1.5rem
 
 @media (max-width: 767px)
   .landing-caption
@@ -124,3 +152,27 @@ h1, h2, h3, h4, h5, h6, p, strong
 @media (min-width: 640px)
   .homepage-content p
     padding: 0 5rem
+
+@media screen and (min-width: 1024px)
+  .sidebar-panel
+    width: 320px
+    z-index: 1
+
+@media screen and (max-width: 1023px)
+  .is-hidden-touch
+    display: none !important
+  
+  .main-wrapper
+    flex-direction: column
+
+  .main-wrapper .navbar
+    top: 4rem
+
+  .lead-panel
+    padding-top: 6rem
+    overflow-y: auto
+
+  .sidebar-panel
+    position: fixed
+    width: 100%
+    z-index: 5000

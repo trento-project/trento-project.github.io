@@ -26,7 +26,6 @@
           </div>
         </a>
       </div>
-  
       
       {{- $showIcons := false -}}
       {{- if .Site.Params.navbar.showIcons -}}
@@ -64,7 +63,8 @@
               {{- $shmenu = .Params.showinmenu -}}
             {{- end -}}
             {{- if $shmenu -}}
-              {{- $secCount := len .Sections -}}
+            {{- $secShowMenu := where .Sections ".Params.showinmenu" "eq" true -}}
+              {{- $secCount := len $secShowMenu -}}
               {{- if (ne $secCount 0) -}}
               <div class="navbar-item has-dropdown is-hoverable">
                 <a href="{{- .Permalink | relURL -}}" class="navbar-link">
@@ -144,5 +144,13 @@
         
         </div>
       </div>
+
+      {{- if (eq .Section "docs") -}}
+      <div class="navbar is-light is-hidden-desktop">
+        <div class="navbar-item">
+            <a class="navbar-docs">Docs</a>
+        </div>
+      </div>
+      {{- end -}}
     </div>
   </nav>

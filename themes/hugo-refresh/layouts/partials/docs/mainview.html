@@ -1,0 +1,15 @@
+<div class="main-wrapper">
+    <div class="navbar is-light is-hidden-desktop">
+        <div class="navbar-item">
+            <a class="navbar-docs">Docs</a>
+        </div>
+    </div>
+
+    <div class="sidebar-panel is-hidden-touch">
+        {{- partial "docs/sidenav.html" . -}}
+    </div>
+
+    <div class="lead-panel">
+        {{- partial "docs/content.html" . -}}
+    </div>
+</div>
