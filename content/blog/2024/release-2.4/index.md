@@ -28,7 +28,7 @@ For centralized user management purposes, Trento can integrate with third-party 
 # Contextual, Detailed Overview of Available Patches and Upgradable Packages in the SUSE Manager Integration
 Trento 2.4 deepens the integration with [SUSE Manager (SUMA)](https://www.suse.com/products/suse-manager/) by providing a overview of available patches/advisories and upgradable packages for each registered host that is also managed by SUMA. For each advisory displayed in these overviews, a details view is available with relevant information about it, such as whether it requires a reboot or no, associated vulnerabilities (CVEs), or a list of affected hosts.
 
-![Available Software Updates with Details](available-software-updates-with-detail@2x.png)
+![Available Software Updates with Details](available-software-updates-with-details@2x.png)
 
 # Inception of the Activity Log
 An Activity Log is now available, providing a centralized location to browse past events and user actions.
@@ -41,7 +41,7 @@ Trento Checks have always been a integral part of the Trento Server and, particu
 Along with this decoupling, the Checks themselves have been relicensed from Apache 2.0 to GPL 3.0.
 
 # Enhanced Discovery Capabilities
-Trento 2.4 is able to discover pacemaker clusters using SAPHanaSR-angi and SAP systems running on JAVA stacks.
+Trento 2.4 is able to discover Pacemaker clusters using SAPHanaSR-angi and SAP systems running on JAVA stacks.
 
 ![Cluser with Angi Architecture](cluster-with-angi-architecture@2x.png)
 
