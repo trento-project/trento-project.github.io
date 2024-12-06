@@ -1,9 +1,10 @@
 name: Publishing
 
 on:
+  pull_request:
   push:
     branches:
-      - main # Set a branch to deploy
+      - main
     paths-ignore:
       - "**/README.md"
   workflow_dispatch:
