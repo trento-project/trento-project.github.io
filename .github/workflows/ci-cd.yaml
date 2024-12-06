@@ -1,4 +1,4 @@
-name: Publishing
+name: Hugo Build and Deploy
 
 on:
   pull_request:
