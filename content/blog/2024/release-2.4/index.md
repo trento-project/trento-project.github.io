@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 2.4"
-date: 2024-11-11T09:45:00+02:00
+date: 2024-12-06T13:00:00+02:00
 hideLastModified: false
 showInMenu: false
 summary: "Features in the first versions of Trento have been developed around two major cornerstones..."
