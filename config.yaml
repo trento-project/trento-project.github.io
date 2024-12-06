@@ -114,7 +114,7 @@ params:
     title: The perfect companion for SUSE Linux Enterprise Server for SAP Applications
       # option to specify the subtitle in the homepage
     subtitle: |
-        Trento is an open-source web application, built by SUSE, to monitor SAP landscapes and proactively prevent infrastructural issues by diagnosing common configuration mistakes and validating systems against SUSE best practices.
+        Trento is an open-source web application, built by SUSE, to enhance day-2 operations of SAP workloads. It can be used to proactively prevent infrastructural issues by diagnosing common issues, validate systems configuration against best practices, and remove toil from routine OS tasks on mission-critical systems.
     # option to specify image in the homepage
     image: "/images/trento-hero-img@2x.png" # worker.svg
     # option to specify the width of the image in the homepage
