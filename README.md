@@ -14,7 +14,7 @@ If you need to customize the css, edit `themes/hugo-refresh/assets/style.sass`.
 
 ## License
 
-Copyright 2024 SUSE LLC
+Copyright 2025 SUSE LLC
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this code repository except in compliance with the License. You may obtain a copy of the
