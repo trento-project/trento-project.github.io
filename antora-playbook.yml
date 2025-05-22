@@ -1,0 +1,16 @@
+site:
+  title: Trento Documentation
+  start_page: trento-docs::adoc/hello.adoc
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+
+ui: 
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+
+output:
+  dir: ./antora_public

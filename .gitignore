@@ -1,3 +1,6 @@
 public/**
 resources/**
 *.lock
+antora_public
+node_modules
+.env
