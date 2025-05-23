@@ -1,1 +1,4 @@
 * xref:adoc/trento-guide.adoc[Getting Started with Trento]
+* xref:upstream_projects/ci-cd-variables[Web]
+* xref:upstream_projects/ci-cd-variables[Wanda]
+* xref:upstream_projects/ci-cd-variables[Agent]

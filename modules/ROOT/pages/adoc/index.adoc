@@ -1,0 +1,3 @@
+= Welcome to the Trento place for user and developer faced documentation!
+
+First entry page
