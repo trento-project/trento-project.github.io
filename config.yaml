@@ -154,7 +154,7 @@ params:
     #    link: username
     #    title: Instagram
     # option to specify the copyright in the footer
-    copyright: 2019 - 2024 SUSE LLC
+    copyright: 2019 - 2025 SUSE LLC
 
 ###################################################################
 ################## multilanguage support options ##################
