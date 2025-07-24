@@ -163,3 +163,12 @@ languages:
   en:
     languageName:       English
     weight:             1
+
+# External menu links in navbar and navbar-clone
+menu:
+ main:
+   - name: "Documentation"
+     url: "https://www.trento-project.io/docs-site"
+     weight: 100
+     params:
+       target: "_blank"
