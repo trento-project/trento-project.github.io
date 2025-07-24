@@ -97,6 +97,14 @@
             {{- end -}}
           {{- end -}}
         {{- end -}}
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}" class="navbar-item is-secondary" {{ with .Params.target }}target="{{ . }}"{{ end }}>
+            {{ if $showIcons }}
+              <i class="fa {{ .Params.icon }}" style="color:{{ $mainColour }};">&nbsp;</i>
+            {{ end }}
+            {{ .Name }}
+          </a>
+        {{ end }}
         
         {{ $currentLang := .Site.Language.Lang }}
         {{ $languageNumber := len $.Site.Home.AllTranslations }}
