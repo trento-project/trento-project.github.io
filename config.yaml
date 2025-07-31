@@ -168,7 +168,7 @@ languages:
 menu:
  main:
    - name: "Documentation"
-     url: "https://www.trento-project.io/docs-site"
+     url: "https://www.trento-project.io/docs"
      weight: 100
      params:
        target: "_blank"
