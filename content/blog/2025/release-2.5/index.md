@@ -32,7 +32,7 @@ In this new version, the IP address and the port that the node exporter is liste
 ![Terminal with Prometheus Integration Message](more-flexible-prometheus-intergration@2x.png)
 
 # Discovery Optimization in Edge-Case Scenarios
-Based on direct customer feedback, the new Trento version improves the discovery behavior in not supported or not recommended scenarios. For example, pacemaker clusters combining HANA and ASCS/ERS resources or not managed instances running on cluster nodes.
+Based on direct customer feedback, the new Trento version improves the discovery behavior in unsupported or unexpected scenarios. For example, pacemaker clusters combining HANA and ASCS/ERS resources or non-managed instances running on cluster nodes.
 
 # Are you wanting to upgrade or try out Trento?
-Follow the [instructions in our documentation](https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html "Getting started with Trento Premium") to get started.
+Follow the [instructions in our documentation](https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html "Getting started with Trento") to get started.
