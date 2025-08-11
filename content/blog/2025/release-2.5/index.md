@@ -9,7 +9,7 @@ author: "Alberto Bravo"
 aliases: [ "release-2.5.0" ]
 ---
 
-Trento 2.5 closes a first development cycle focused on observability and compliance. Stay tuned for a new major version of Trento with the first operation use cases! Coming soon.
+Trento 2.5 closes a first development cycle focused on observability and compliance. Stay tuned for a new major version of Trento with the first operation use cases and MCP (Model Context Protocol) integration! Coming soon.
 
 # Discovery of Hana Scale-up Cost Optimized Clusters
 With the discovery of HANA scale-up cost optimized clusters, along with the corresponding configuration checks, Trento delivers on coverage of the most important HA pacemaker-based scenarios for SAP workloads on SLES for SAP. 
