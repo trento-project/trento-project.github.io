@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 2.5"
-date: 2025-04-25T10:30:00+02:00
+date: 2025-08-11T14:30:00+02:00
 hideLastModified: false
 showInMenu: false
 summary: "Trento 2.5 closes a first development cycle focused on observability and compliance."
