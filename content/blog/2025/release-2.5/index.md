@@ -34,5 +34,8 @@ In this new version, the IP address and the port that the node exporter is liste
 # Discovery Optimization in Edge-Case Scenarios
 Based on direct customer feedback, the new Trento version improves the discovery behavior in unsupported or unexpected scenarios. For example, pacemaker clusters combining HANA and ASCS/ERS resources or non-managed instances running on cluster nodes.
 
+# Relevant Updates to the Checks Catalog
+The new version of Trento comes with significant updates to the Checks Catalog including better documentation references, specific configuration checks for clusters using SAPHanaSR-angi and configuration checks for the newly discovered HANA scale-up cost optimized clusters.
+
 # Are you wanting to upgrade or try out Trento?
 Follow the [instructions in our documentation](https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html "Getting started with Trento") to get started.
