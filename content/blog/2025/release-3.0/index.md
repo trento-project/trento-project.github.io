@@ -12,11 +12,12 @@ aliases: [ "release-3.0.0" ]
 Version 3.0 marks a milestone in the development of Trento by extending the application scope to automation with a first set of operation use cases, and beginning to explore the potential of AI with MCP integration.
 
 # First Operation Use Cases
-Version 3.0 comes with a set of operations that will allow users to prepare their clusters for offline maintenance. This first set of operations include host operations (saptune apply, saptune change, reboot), cluster operations (turn maintenance on/off, enable/disable pacemaker service at boot, node stop/start) and SAP operations (stop/start HANA database, stop/start SAP instance, stop/start SAP system). Operations in Trento are ruled by three principles:
+Version 3.0 comes with a set of operations that will allow users to prepare their clusters for offline maintenance. This first set of operations includes host operations (saptune apply, saptune change, reboot), cluster operations (turn maintenance on/off, enable/disable pacemaker service at boot, node stop/start), HANA operations (stop/start database) and SAP operations (stop/start SAP instance, stop/start SAP system). Operations in Trento are ruled by four principles:
 
 * They are protected by permissions: only users with the right permissions can perform operations.
-* They are contextual:  for example, in a cluster you can perform operations on the whole cluster, on specific nodes or on specific resources.
-* They include internal policies to prevent users from executing them when it can be harmful for a system: for example, you can not stop a database if you have application server instances connected to it. 
+* The path in the UI to access a particular operation is contextual and it depends on the particular target. The path is not the same, for example, to set an entire cluster in maintenance than to set a particular resource in maintenance.
+* They include internal policies to prevent users from executing them when such execution violates documented, well established best practices. For example, you can not stop a database if you have running application server instances connected to it. 
+* Only one operation at a time is allowed on any given target.
 
 ![First Operation Use Cases](first-operation-use-cases@2x.png)
 
