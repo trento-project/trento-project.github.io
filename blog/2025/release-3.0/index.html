@@ -2,9 +2,9 @@
 <html lang="en">
   <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://trento-project.io/blog/2024/release-2.4/" />
-    <meta property="og:type" content="article" /><meta property="og:title" content="Announcing Trento Version 2.4" /><meta property="og:description" content="Features in the first versions of Trento have been developed around two major cornerstones..." /><meta property="og:image:width"  content="375" />
-        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/blog/2024/release-2.4/trento-2-4-thumbnail@2x_hu17755348668733697200.png" /><title>Trento Project - Announcing Trento Version 2.4</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://trento-project.io/blog/2025/release-3.0/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="Announcing Trento Version 3.0" /><meta property="og:description" content="Version 3.0 marks a milestone in the development of Trento by extending the application scope to..." /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://trento-project.io/blog/2025/release-3.0/trento-3-0-thumbnail@2x_hu2913171202425639117.png" /><title>Trento Project - Announcing Trento Version 3.0</title>
 
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -101,71 +101,58 @@
   <div class="container blog">
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">Announcing Trento Version 2.4</h1>
+        <h1 class="title is-2 section-title">Announcing Trento Version 3.0</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div><div class="blog-meta mt-20">
           <p class="author is-inline">Written by&nbsp;Alberto Bravo</p>
           <p class="seperator is-inline px-10">|</p>
-          <p class="date is-inline">Published&nbsp;6 December 2024</p>
-        </div><section class="section content has-text-justified"><p>Features in the first versions of Trento have been developed around two major cornerstones: observability/monitoring and configuration checks. The latest version of Trento brings its core competences to enterprise-grade level and opens the door to future features around a third cornerstone: operation/automation.</p>
-<h1 id="new-permission-based-user-management-system-with-optional-mfa">New Permission-based User Management System with Optional MFA</h1>
-<p>Trento 2.4 brings a local permission-based user management system that allows to segregate different roles: user managers, SAP administrators with display-only access,
-SAP administrators with configuration permissions and SAP administrators with execution permissions. Additionally, users can enable Multi Factor Authentication for increased security. </p>
+          <p class="date is-inline">Published&nbsp;26 November 2025</p>
+        </div><section class="section content has-text-justified"><p>Version 3.0 marks a milestone in the development of Trento by extending the application scope to automation with a first set of operation use cases, and beginning to explore the potential of AI with MCP integration.</p>
+<h1 id="first-operation-use-cases">First Operation Use Cases</h1>
+<p>Version 3.0 comes with a set of operations that will allow users to prepare their clusters for offline maintenance. This first set of operations includes host operations (saptune apply, saptune change, reboot), cluster operations (turn maintenance on/off, enable/disable pacemaker service at boot, node stop/start), HANA operations (stop/start database) and SAP operations (stop/start SAP instance, stop/start SAP system). Operations in Trento are ruled by four principles:</p>
+<ul>
+<li>They are protected by permissions: only users with the right permissions can perform operations.</li>
+<li>The path in the UI to access a particular operation is contextual and it depends on the particular target. The path is not the same, for example, to set an entire cluster in maintenance than to set a particular resource in maintenance.</li>
+<li>They include internal policies to prevent users from executing them when such execution violates documented, well established best practices. For example, you can not stop a database if you have running application server instances connected to it. </li>
+<li>Only one operation at a time is allowed on any given target.</li>
+</ul>
 <p><figure>
-    <img src="user-management@2x.png" alt="User Management">
+    <img src="first-operation-use-cases@2x.png" alt="First Operation Use Cases">
+    <figcaption></figcaption>
+</figure>
+</p>
+<h1 id="model-context-protocol-mcp-integration">Model Context Protocol (MCP) Integration</h1>
+<p>Trento 3.0 includes a new component, the Trento MCP Server, which  directly connects your enterprise LLM to the deep, real-time observability of the Trento platform, transforming your AI into an expert for your most critical SAP landscapes. It leverages Trento&rsquo;s powerful discovery engine to provide a live, detailed inventory of your entire SAP infrastructure—including HANA databases, application servers, and complex Pacemaker high-availability (HA) clusters. By securely exposing Trento&rsquo;s continuous health checks and SUSE best-practice validations via the Model Context Protocol, you empower your LLM to move beyond generic advice. Your AI can now instantly diagnose real-world misconfigurations, understand complex HA cluster statuses, and generate actionable remediation plans based on the actual, live state of your production SAP systems.</p>
+<p><figure>
+    <img src="mcp-integration@2x.png" alt="MCP Integration">
+    <figcaption></figcaption>
+</figure>
+</p>
+<h1 id="a-stronger-core-and-improved-capabilities-around-observability-and-compliance">A Stronger Core and Improved Capabilities Around Observability and Compliance</h1>
+<p>Trento 3.0 continues to strengthen the core and the capabilities around observability and compliance:</p>
+<ul>
+<li>A more flexible, secure alert emails configuration.</li>
+<li>A more helpful activity log with correlation of entries.</li>
+<li>Improved observability around offline clusters and HANA native HA scenarios (including multi target/tier setups).</li>
+<li>Improved configuration validation with additional scenario-specific checks.</li>
+</ul>
+<p><figure>
+    <img src="email-alert-settings@2x.png" alt="Email Alert Settings">
     <figcaption></figcaption>
 </figure>
 </p>
 <p><figure>
-    <img src="profile-with-totp@2x.png" alt="User Profile with TOTP">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="single-sign-on-and-third-party-idp-integration-via-oidc-oauth2-and-saml-protocols">Single Sign-On and Third-party IDP Integration via OIDC, OAUTH2 and SAML Protocols</h1>
-<p>For centralized user management purposes, Trento can integrate with third-party identity providers using OIDC, OAUTH2 and SAML protocols. When such integration is enabled, users are provided by the identity manager server but permissions are still managed within Trento.</p>
-<p><figure>
-    <img src="login-with-sso@2x.png" alt="Login with Single Sign-On">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="contextual-detailed-overview-of-available-patches-and-upgradable-packages-in-the-suse-manager-integration">Contextual, Detailed Overview of Available Patches and Upgradable Packages in the SUSE Manager Integration</h1>
-<p>Trento 2.4 deepens the integration with <a href="https://www.suse.com/products/suse-manager/">SUSE Manager (SUMA)</a> by providing a overview of available patches/advisories and upgradable packages for each registered host that is also managed by SUMA. For each advisory displayed in these overviews, a details view is available with relevant information about it, such as whether it requires a reboot or no, associated vulnerabilities (CVEs), or a list of affected hosts.</p>
-<p><figure>
-    <img src="available-software-updates-with-details@2x.png" alt="Available Software Updates with Details">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="inception-of-the-activity-log">Inception of the Activity Log</h1>
-<p>An Activity Log is now available, providing a centralized location to browse past events and user actions.</p>
-<p><figure>
-    <img src="activity-log@2x.png" alt="Activity Log">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="delivery-of-trento-checks-decoupled-from-delivery-of-core-functionality">Delivery of Trento Checks Decoupled from Delivery of Core Functionality</h1>
-<p>Trento Checks have always been a integral part of the Trento Server and, particularly, the Checks Engine component known as Wanda. But starting with version 2.4 they are delivered separately. This will enable customers to update their Checks catalog with new checks or changes to existing checks as soon as they are released, without having to wait for a full new-version cycle release. This will be possible regardless the chosen deployment type for Trento Server: on K8s, systemd or containerized. </p>
-<p>Along with this decoupling, the Checks themselves have been relicensed from Apache 2.0 to GPL 3.0.</p>
-<h1 id="enhanced-discovery-capabilities">Enhanced Discovery Capabilities</h1>
-<p>Trento 2.4 is able to discover Pacemaker clusters using SAPHanaSR-angi and SAP systems running on JAVA stacks.</p>
-<p><figure>
-    <img src="cluster-with-angi-architecture@2x.png" alt="Cluser with Angi Architecture">
+    <img src="activity-details-related-events@2x.png" alt="Activity Details Related Events">
     <figcaption></figcaption>
 </figure>
 </p>
 <p><figure>
-    <img src="sap-systems-with-java@2x.png" alt="SAP Systems with JAVA">
-    <figcaption></figcaption>
-</figure>
-</p>
-<h1 id="more-configuration-checks">More Configuration Checks</h1>
-<p>Last but not least, the latest version of Trento brings new configuration checks for HANA scale-out clusters and additional configuration checks for ASCS/ERS clusters.</p>
-<p><figure>
-    <img src="hana-scale-out-cluster-dectection@2x.png" alt="HANA Scale Out Cluster">
+    <img src="ha-scenarios-observability@2x.png" alt="HA Scenarios Observability">
     <figcaption></figcaption>
 </figure>
 </p>
 <h1 id="are-you-wanting-to-upgrade-or-try-out-trento">Are you wanting to upgrade or try out Trento?</h1>
-<p>Follow the <a href="https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html" title="Getting started with Trento Premium">instructions in our documentation</a> to get started.</p>
+<p>Follow the <a href="https://documentation.suse.com/sles-sap/trento/single-html/SLES-SAP-trento/index.html" title="Getting started with Trento">instructions in our documentation</a> to get started.</p>
 </section>
       </div>
     </div>
