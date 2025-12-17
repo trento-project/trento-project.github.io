@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 3.0"
-date: 2025-11-26T13:17:00+02:00
+date: 2025-12-16T14:30:00+02:00
 hideLastModified: false
 showInMenu: false
 summary: "Version 3.0 marks a milestone in the development of Trento by extending the application scope to..."
