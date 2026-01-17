@@ -36,6 +36,7 @@ subFeatContent:
 ---
 
 ## How it Works
+
 Trento is composed by two main parts, the Trento Server and Trento Agents. The Trento Server is further composed by a multi-tier web application and a background service, the Trento Checks Engine, codenamed _Wanda_.
 
 You can run the Trento Server anywhere you want: we support Kubernetes-based container platforms via an Helm Chart, and provide also classic RPM packages that can be installed in traditional SUSE Linux Enterprise environments.
@@ -45,6 +46,8 @@ The Trento Agents are shipped with SUSE Linux Enterprise Server for SAP Applicat
 ![Trento Checks Engine](trento-checks-engine@2x.png)
 
 ## Get Started with Trento
+
 Use Trento with you SAP Application server and improve the overall visibility and discovery of faults which are aligned to the SUSE SAP Best Practice Guidelines.
 
 {{< button class="is-primary" link="/docs" alt="Start Reading the Trento Documentation" >}}Read Documentation{{< /button >}}
+{{< button class="is-primary" link="https://demo.trento-project.io" alt="Try Trento Demo" >}}Try the Demo{{< /button >}}
