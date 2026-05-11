@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: SUSE LLC
+# SPDX-License-Identifier: Apache-2.0
+
 baseURL: https://trento-project.io
 languageCode: en-us
 title: Trento Project
