@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 3.1"
-date: 2026-05-28T14:45:00+02:00
+date: 2026-05-29T13:00:00+02:00
 hideLastModified: false
 showInMenu: false
 summary: "Trento 3.1 continues the road started with Trento 3.0 around automation and AI capabilities."
