@@ -1,0 +1,20 @@
+{{- $original := (.Page.Resources.ByType "video").GetMatch (printf "*%s*" (.Get "src")) -}}
+{{- $src    := printf "%s" (.Get "src" ) -}}
+{{- $type    := printf "%s" (.Get "type" ) -}}
+{{- $width    := printf "%s" (.Get "width" ) -}}
+{{- $height   := printf "%s" (.Get "height") -}}
+{{- $caption  := printf "%s" (.Get "caption") -}}
+{{- with $original -}}
+<div class="columns is-centered container">
+    <div class="column is-full">
+        <figure>
+            <video {{ if $width }}width="{{- $width -}}"{{ end }} {{ if $height }}height="{{- $height -}}"{{ end }} controls>
+                <source src="{{- $src -}}" type="{{- $type -}}">
+            </video>
+            {{- if $caption -}}
+                    <figcaption>{{- $caption -}}</figcaption>
+            {{- end -}}
+        </figure>
+    </div>
+</div>
+{{- end -}}
