@@ -43,3 +43,19 @@ jobs:
           cname: www.trento-project.io
           # force_orphan: true
           commit_message: ${{ github.event.head_commit.message }}
+
+  dependabot-auto-merge:
+    name: Approve and merge Dependabot PRs
+    if: >
+      always() &&
+      !contains(needs.*.result, 'failure') &&
+      !contains(needs.*.result, 'cancelled') &&
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.user.login == 'dependabot[bot]'
+    needs:
+      - build-and-deploy
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    uses: trento-project/.github/.github/workflows/dependabot-auto-merge.yaml@d8679bc6bc759e119793a2d59285098613f52055 # v1.10.0
