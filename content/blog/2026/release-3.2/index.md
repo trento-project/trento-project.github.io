@@ -1,6 +1,6 @@
 ---
 title: "Announcing Trento Version 3.2"
-date: 2026-11-05T13:00:00+02:00
+date: 2026-11-05T18:00:00+02:00
 hideLastModified: false
 showInMenu: false
 summary: "Trento 3.2 facilitates the adoption of AI capabilities with the introduction of Liz and..."
